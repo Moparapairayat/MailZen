@@ -1,0 +1,28 @@
+{
+  "name": "Meeting & Demo Request",
+  "description": "Request a meeting or product demo with prospects",
+  "category": "cold",
+  "subcategory": "meeting_request",
+  "thumbnail": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "meeting_body",
+      "rows": [
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "greeting", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Hi {{first_name}},</p>", "fontSize": "15px", "containerPadding": "40px 40px 15px 40px" } },
+          { "id": "context", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Following up on my previous email – I understand you're busy, so I'll keep this brief.</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "value", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">I'd love to show you how we've helped companies like yours:</p>", "fontSize": "15px", "containerPadding": "0px 40px 10px 40px" } },
+          { "id": "benefits", "type": "text", "values": { "text": "<div style=\"background: #F0FDF4; border-radius: 8px; padding: 20px; margin: 10px 0;\"><p style=\"color: #166534; margin-bottom: 10px;\">✓ Reduce operational costs by 30%</p><p style=\"color: #166534; margin-bottom: 10px;\">✓ Automate 80% of manual tasks</p><p style=\"color: #166534;\">✓ See ROI within 60 days</p></div>", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "ask", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Would any of these times work for a quick 20-minute demo?</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "times", "type": "text", "values": { "text": "<div style=\"background: #F3F4F6; border-radius: 8px; padding: 15px;\"><p style=\"color: #374151; margin-bottom: 8px;\">📅 <strong>Tuesday, Jan 21</strong> at 2:00 PM EST</p><p style=\"color: #374151; margin-bottom: 8px;\">📅 <strong>Wednesday, Jan 22</strong> at 10:00 AM EST</p><p style=\"color: #374151;\">📅 <strong>Thursday, Jan 23</strong> at 3:00 PM EST</p></div>", "containerPadding": "0px 40px 20px 40px" } },
+          { "id": "calendar_btn", "type": "button", "values": { "text": "Pick a Time That Works", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#4F46E5" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } },
+          { "id": "signature", "type": "text", "values": { "text": "<p style=\"color: #374151;\">Looking forward to connecting,</p><p style=\"color: #111827; font-weight: 600; margin-top: 8px;\">John Smith</p><p style=\"color: #6B7280; font-size: 14px;\">Sales Director | Your Company</p>", "containerPadding": "0px 40px 40px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">© 2026 Your Company | <a href=\"#\" style=\"color: #9CA3AF;\">Unsubscribe</a></p>", "fontSize": "11px", "textAlign": "center", "containerPadding": "20px" } }] }], "values": { "backgroundColor": "#F9FAFB" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

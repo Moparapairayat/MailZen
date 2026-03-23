@@ -1,0 +1,59 @@
+{
+  "name": "Order Confirmation",
+  "description": "Professional order confirmation email with order details",
+  "category": "transactional",
+  "subcategory": "order_confirmation",
+  "thumbnail": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "order_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/10B981/FFFFFF?text=STORE" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }],
+          "values": { "backgroundColor": "#10B981" }
+        },
+        {
+          "id": "row_success",
+          "cells": [1],
+          "columns": [{ "id": "col_success", "contents": [
+            { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">✅</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+            { "id": "title", "type": "heading", "values": { "text": "Order Confirmed!", "headingType": "h1", "fontSize": "28px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 10px 20px" } },
+            { "id": "order_num", "type": "text", "values": { "text": "<p style=\"color: #6B7280;\">Order #<strong style=\"color: #111827;\">ORD-2026-84729</strong></p>", "fontSize": "15px", "textAlign": "center", "containerPadding": "0px 20px 10px 20px" } },
+            { "id": "thanks", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 160%;\">Thank you for your purchase! We're getting your order ready and will notify you when it ships.</p>", "fontSize": "15px", "textAlign": "center", "containerPadding": "0px 40px 30px 40px" } }
+          ] }],
+          "values": { "backgroundColor": "#FFFFFF" }
+        },
+        {
+          "id": "row_items",
+          "cells": [1],
+          "columns": [{ "id": "col_items", "contents": [
+            { "id": "items_title", "type": "heading", "values": { "text": "Order Summary", "headingType": "h2", "fontSize": "18px", "fontWeight": 700, "color": "#111827", "containerPadding": "25px 30px 15px 30px" } },
+            { "id": "item1", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #E5E7EB;\"><div><p style=\"color: #111827; font-weight: 500;\">Premium Product</p><p style=\"color: #6B7280; font-size: 13px;\">Qty: 1</p></div><p style=\"color: #111827; font-weight: 600;\">$49.99</p></div>", "containerPadding": "0px 30px" } },
+            { "id": "item2", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #E5E7EB;\"><div><p style=\"color: #111827; font-weight: 500;\">Essential Package</p><p style=\"color: #6B7280; font-size: 13px;\">Qty: 2</p></div><p style=\"color: #111827; font-weight: 600;\">$29.98</p></div>", "containerPadding": "0px 30px" } },
+            { "id": "totals", "type": "text", "values": { "text": "<div style=\"padding-top: 15px;\"><div style=\"display: flex; justify-content: space-between; margin-bottom: 8px;\"><p style=\"color: #6B7280;\">Subtotal</p><p style=\"color: #374151;\">$79.97</p></div><div style=\"display: flex; justify-content: space-between; margin-bottom: 8px;\"><p style=\"color: #6B7280;\">Shipping</p><p style=\"color: #374151;\">$5.99</p></div><div style=\"display: flex; justify-content: space-between; padding-top: 12px; border-top: 2px solid #111827;\"><p style=\"color: #111827; font-weight: 700;\">Total</p><p style=\"color: #111827; font-weight: 700; font-size: 18px;\">$85.96</p></div></div>", "containerPadding": "0px 30px 25px 30px" } }
+          ] }],
+          "values": { "backgroundColor": "#F9FAFB" }
+        },
+        {
+          "id": "row_cta",
+          "cells": [1],
+          "columns": [{ "id": "col_cta", "contents": [
+            { "id": "track_btn", "type": "button", "values": { "text": "Track Your Order", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#10B981" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "25px 40px" } }
+          ] }],
+          "values": { "backgroundColor": "#FFFFFF" }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">Questions about your order? <a href=\"#\" style=\"color: #9CA3AF;\">Contact Support</a></p><p style=\"color: #6B7280; margin-top: 15px;\">© 2026 Your Store. All rights reserved.</p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }],
+          "values": { "backgroundColor": "#1F2937" }
+        }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

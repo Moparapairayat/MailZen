@@ -1,0 +1,665 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+    html.dark body.admin-theme,
+    html.dark body.customer-theme {
+        background-color: theme('colors.admin.main');
+        color: theme('colors.admin.text.primary');
+    }
+
+    html:not(.dark) body.admin-theme,
+    html:not(.dark) body.customer-theme {
+        background-color: theme('colors.white');
+        color: theme('colors.gray.900');
+    }
+
+    html.dark .admin-theme *,
+    html.dark .admin-theme ::before,
+    html.dark .admin-theme ::after,
+    html.dark .customer-theme *,
+    html.dark .customer-theme ::before,
+    html.dark .customer-theme ::after {
+        border-color: theme('colors.admin.border');
+    }
+
+    html:not(.dark) .admin-theme *,
+    html:not(.dark) .admin-theme ::before,
+    html:not(.dark) .admin-theme ::after,
+    html:not(.dark) .customer-theme *,
+    html:not(.dark) .customer-theme ::before,
+    html:not(.dark) .customer-theme ::after {
+        border-color: theme('colors.gray.200');
+    }
+
+    [x-cloak] {
+        display: none !important;
+    }
+
+    turbo-progress-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        z-index: 99999;
+        background: linear-gradient(90deg, var(--tw-brand, #3b82f6), rgba(var(--tw-brand-rgb, 59, 130, 246), 0.55));
+        box-shadow: 0 0 10px rgba(var(--tw-brand-rgb, 59, 130, 246), 0.35);
+    }
+
+    body:not(.admin-theme):not(.customer-theme) {
+        --tw-brand: var(--brand-color, #3b82f6);
+        --tw-brand-rgb: var(--brand-rgb, 59, 130, 246);
+    }
+
+    body:not(.admin-theme):not(.customer-theme) .bg-primary-600 {
+        background-color: var(--tw-brand) !important;
+    }
+
+    body:not(.admin-theme):not(.customer-theme) .hover\:bg-primary-700:hover {
+        background-color: var(--tw-brand) !important;
+    }
+
+    body:not(.admin-theme):not(.customer-theme) .text-primary-600,
+    body:not(.admin-theme):not(.customer-theme) .hover\:text-primary-700:hover {
+        color: var(--tw-brand) !important;
+    }
+
+    body:not(.admin-theme):not(.customer-theme) .border-primary-500,
+    body:not(.admin-theme):not(.customer-theme) .focus\:border-primary-500:focus {
+        border-color: var(--tw-brand) !important;
+    }
+
+    body:not(.admin-theme):not(.customer-theme) .focus\:ring-primary-500:focus {
+        --tw-ring-color: rgba(var(--tw-brand-rgb), var(--tw-ring-opacity, 1)) !important;
+    }
+
+    body:not(.admin-theme):not(.customer-theme) input:is([type='text'], [type='email'], [type='password'], [type='number'], [type='url'], [type='search'], [type='tel'], [type='date'], [type='datetime-local'], [type='month'], [type='time'], [type='week']):focus,
+    body:not(.admin-theme):not(.customer-theme) textarea:focus,
+    body:not(.admin-theme):not(.customer-theme) select:focus {
+        --tw-ring-color: rgba(var(--tw-brand-rgb), var(--tw-ring-opacity, 1)) !important;
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--tw-brand-rgb), 1) !important;
+        box-shadow: 0 0 0 3px rgba(var(--tw-brand-rgb), 0.35), var(--tw-shadow, 0 0 #0000) !important;
+        outline: 2px solid transparent !important;
+        outline-offset: 2px;
+    }
+
+    body.admin-theme,
+    body.customer-theme {
+        --tw-brand: var(--brand-color, #3b82f6);
+        --tw-brand-rgb: var(--brand-rgb, 59, 130, 246);
+    }
+
+    body.admin-theme .bg-primary-500,
+    body.customer-theme .bg-primary-500,
+    body.admin-theme .bg-primary-600,
+    body.customer-theme .bg-primary-600 {
+        background-color: var(--tw-brand) !important;
+    }
+
+    body.admin-theme .hover\:bg-primary-600:hover,
+    body.customer-theme .hover\:bg-primary-600:hover,
+    body.admin-theme .hover\:bg-primary-700:hover,
+    body.customer-theme .hover\:bg-primary-700:hover {
+        background-color: var(--tw-brand) !important;
+    }
+
+    body.admin-theme .bg-primary-500\/10,
+    body.customer-theme .bg-primary-500\/10 {
+        background-color: rgba(var(--tw-brand-rgb), 0.10) !important;
+    }
+
+    body.admin-theme .text-primary-500,
+    body.customer-theme .text-primary-500,
+    body.admin-theme .text-primary-600,
+    body.customer-theme .text-primary-600 {
+        color: var(--tw-brand) !important;
+    }
+
+    body.admin-theme .border-primary-500,
+    body.customer-theme .border-primary-500,
+    body.admin-theme .focus\:border-primary-500:focus,
+    body.customer-theme .focus\:border-primary-500:focus {
+        border-color: var(--tw-brand) !important;
+    }
+
+    body.admin-theme .focus\:ring-primary-500:focus,
+    body.customer-theme .focus\:ring-primary-500:focus {
+        --tw-ring-color: var(--tw-brand) !important;
+    }
+
+    body.admin-theme input:is([type='text'], [type='email'], [type='password'], [type='number'], [type='url'], [type='search'], [type='tel'], [type='date'], [type='datetime-local'], [type='month'], [type='time'], [type='week']):focus,
+    body.admin-theme textarea:focus,
+    body.admin-theme select:focus,
+    body.customer-theme input:is([type='text'], [type='email'], [type='password'], [type='number'], [type='url'], [type='search'], [type='tel'], [type='date'], [type='datetime-local'], [type='month'], [type='time'], [type='week']):focus,
+    body.customer-theme textarea:focus,
+    body.customer-theme select:focus {
+        --tw-ring-color: rgba(var(--tw-brand-rgb), var(--tw-ring-opacity, 1)) !important;
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--tw-brand-rgb), 1) !important;
+        box-shadow: 0 0 0 3px rgba(var(--tw-brand-rgb), 0.35), var(--tw-shadow, 0 0 #0000) !important;
+        outline: 2px solid transparent !important;
+        outline-offset: 2px;
+    }
+
+    html:not(.dark) body.admin-theme input:not([type='checkbox']):not([type='radio']):not([type='file']):focus,
+    html:not(.dark) body.admin-theme textarea:focus,
+    html:not(.dark) body.admin-theme select:focus,
+    html:not(.dark) body.customer-theme input:not([type='checkbox']):not([type='radio']):not([type='file']):focus,
+    html:not(.dark) body.customer-theme textarea:focus,
+    html:not(.dark) body.customer-theme select:focus,
+    html.dark body.admin-theme input:not([type='checkbox']):not([type='radio']):not([type='file']):focus,
+    html.dark body.admin-theme textarea:focus,
+    html.dark body.admin-theme select:focus,
+    html.dark body.customer-theme input:not([type='checkbox']):not([type='radio']):not([type='file']):focus,
+    html.dark body.customer-theme textarea:focus,
+    html.dark body.customer-theme select:focus {
+        --tw-ring-color: rgba(var(--tw-brand-rgb), var(--tw-ring-opacity, 1)) !important;
+        --tw-border-opacity: 1 !important;
+        border-color: rgba(var(--tw-brand-rgb), 1) !important;
+        box-shadow: 0 0 0 3px rgba(var(--tw-brand-rgb), 0.35), var(--tw-shadow, 0 0 #0000) !important;
+        outline: 2px solid transparent !important;
+        outline-offset: 2px;
+    }
+
+    body.admin-theme .text-\[\#1E5FEA\],
+    body.customer-theme .text-\[\#1E5FEA\],
+    body.admin-theme .hover\:text-\[\#1E5FEA\]:hover,
+    body.customer-theme .hover\:text-\[\#1E5FEA\]:hover {
+        color: var(--tw-brand) !important;
+    }
+
+    body.admin-theme .bg-\[rgba\(30\,95\,234\,0\.08\)\],
+    body.customer-theme .bg-\[rgba\(30\,95\,234\,0\.08\)\] {
+        background-color: rgba(var(--tw-brand-rgb), 0.08) !important;
+    }
+
+    html.dark body.admin-theme .dark\:bg-\[rgba\(30\,95\,234\,0\.12\)\],
+    html.dark body.customer-theme .dark\:bg-\[rgba\(30\,95\,234\,0\.12\)\] {
+        background-color: rgba(var(--tw-brand-rgb), 0.12) !important;
+    }
+
+    body.admin-theme svg [stroke="#1E5FEA"],
+    body.customer-theme svg [stroke="#1E5FEA"] {
+        stroke: var(--tw-brand) !important;
+    }
+
+    body.admin-theme svg [fill="#1E5FEA"],
+    body.customer-theme svg [fill="#1E5FEA"] {
+        fill: var(--tw-brand) !important;
+    }
+}
+
+@layer components {
+    .btn-brand-gradient {
+        background-color: var(--tw-brand);
+        background-image: linear-gradient(
+            to right,
+            color-mix(in srgb, var(--tw-brand) 90%, white),
+            color-mix(in srgb, var(--tw-brand) 90%, black)
+        );
+    }
+
+    .btn-brand-gradient:hover {
+        background-image: linear-gradient(
+            to right,
+            color-mix(in srgb, var(--tw-brand) 85%, white),
+            color-mix(in srgb, var(--tw-brand) 85%, black)
+        );
+    }
+
+    /* Table styles - no padding and inner border-radius */
+    
+    /* Table inner border-radius */
+    table thead tr:first-child th:first-child {
+        border-top-left-radius: 10px;
+    }
+    
+    table thead tr:first-child th:last-child {
+        border-top-right-radius: 10px;
+    }
+    
+    table tbody tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+    
+    table tbody tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+    
+    /* For tables without thead */
+    table tr:first-child td:first-child {
+        border-top-left-radius: 10px;
+    }
+    
+    table tr:first-child td:last-child {
+        border-top-right-radius: 10px;
+    }
+    
+    table tr:last-child td:first-child {
+        border-bottom-left-radius: 10px;
+    }
+    
+    table tr:last-child td:last-child {
+        border-bottom-right-radius: 10px;
+    }
+
+    html[dir="rtl"] table thead tr:first-child th:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    html[dir="rtl"] table thead tr:first-child th:last-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    html[dir="rtl"] table tbody tr:last-child td:first-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+    html[dir="rtl"] table tbody tr:last-child td:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    html[dir="rtl"] table tr:first-child td:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    html[dir="rtl"] table tr:first-child td:last-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+    }
+
+    html[dir="rtl"] table tr:last-child td:first-child {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+    }
+
+    html[dir="rtl"] table tr:last-child td:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+
+    .admin-theme nav[aria-label="Pagination Navigation"] p,
+    .customer-theme nav[aria-label="Pagination Navigation"] p {
+        margin: 0 !important;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .admin-theme .activities-pagination nav > div {
+        row-gap: 0.75rem;
+    }
+
+    .admin-theme .activities-pagination nav a,
+    .admin-theme .activities-pagination nav span {
+        border-color: theme('colors.gray.200');
+        border-radius: 0.5rem;
+    }
+
+    html.dark .admin-theme .activities-pagination nav a,
+    html.dark .admin-theme .activities-pagination nav span {
+        border-color: theme('colors.admin.border');
+    }
+
+    .admin-theme .activities-pagination nav a {
+        background-color: rgb(255 255 255 / 0.05);
+    }
+
+    html:not(.dark) .admin-theme .activities-pagination nav a {
+        background-color: theme('colors.white');
+    }
+
+    .admin-theme .activities-pagination nav a:hover {
+        background-color: rgb(255 255 255 / 0.10);
+    }
+
+    html:not(.dark) .admin-theme .activities-pagination nav a:hover {
+        background-color: theme('colors.gray.50');
+    }
+
+    .admin-theme .activities-pagination nav span[aria-current="page"] span {
+        background-color: theme('colors.primary.500');
+        border-color: theme('colors.primary.500');
+        color: theme('colors.white');
+    }
+
+    .admin-theme .activities-pagination nav span[aria-disabled="true"] span,
+    .admin-theme .activities-pagination nav span[aria-disabled="true"] svg {
+        opacity: 0.55;
+    }
+
+    .admin-theme .activities-pagination nav .-space-x-px {
+        margin-left: 0 !important;
+    }
+
+    .admin-theme .activities-pagination nav .-space-x-px > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0.5rem !important;
+    }
+
+    .admin-theme .activities-pagination nav .-ml-px {
+        margin-left: 0 !important;
+    }
+
+    html[dir="rtl"] .admin-theme .activities-pagination nav .-space-x-px {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    html[dir="rtl"] .admin-theme .activities-pagination nav .-space-x-px > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0 !important;
+        margin-right: 0.5rem !important;
+    }
+
+    html[dir="rtl"] .admin-theme .activities-pagination nav .-ml-px {
+        margin-right: 0 !important;
+    }
+}
+
+@layer utilities {
+    html.dark .admin-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+    html.dark .admin-theme select,
+    html.dark .admin-theme textarea,
+    html.dark .customer-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+    html.dark .customer-theme select,
+    html.dark .customer-theme textarea {
+        border-color: theme('colors.admin.border') !important;
+        background-color: rgb(255 255 255 / 0.05) !important;
+        color: theme('colors.admin.text.primary') !important;
+    }
+
+    html.dark .admin-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):focus,
+    html.dark .admin-theme select:focus,
+    html.dark .admin-theme textarea:focus,
+    html.dark .customer-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):focus,
+    html.dark .customer-theme select:focus,
+    html.dark .customer-theme textarea:focus {
+        border-color: theme('colors.primary.500') !important;
+        box-shadow: 0 0 0 3px rgb(59 130 246 / 0.5);
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+
+    html.dark .admin-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"])::placeholder,
+    html.dark .admin-theme textarea::placeholder,
+    html.dark .customer-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"])::placeholder,
+    html.dark .customer-theme textarea::placeholder {
+        color: theme('colors.admin.text.secondary') !important;
+        opacity: 0.7;
+    }
+
+    html:not(.dark) .admin-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+    html:not(.dark) .admin-theme select,
+    html:not(.dark) .admin-theme textarea,
+    html:not(.dark) .customer-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]),
+    html:not(.dark) .customer-theme select,
+    html:not(.dark) .customer-theme textarea {
+        border-color: theme('colors.gray.300') !important;
+        background-color: theme('colors.white') !important;
+        color: theme('colors.gray.900') !important;
+    }
+
+    html:not(.dark) .admin-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"])::placeholder,
+    html:not(.dark) .admin-theme textarea::placeholder,
+    html:not(.dark) .customer-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"])::placeholder,
+    html:not(.dark) .customer-theme textarea::placeholder {
+        color: theme('colors.gray.500') !important;
+        opacity: 1;
+    }
+
+    html:not(.dark) .admin-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):focus,
+    html:not(.dark) .admin-theme select:focus,
+    html:not(.dark) .admin-theme textarea:focus,
+    html:not(.dark) .customer-theme input:not([type="checkbox"]):not([type="radio"]):not([type="file"]):focus,
+    html:not(.dark) .customer-theme select:focus,
+    html:not(.dark) .customer-theme textarea:focus {
+        border-color: theme('colors.primary.500') !important;
+        box-shadow: 0 0 0 3px rgb(59 130 246 / 0.5);
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+    }
+
+    html.dark .admin-theme label,
+    html.dark .customer-theme label {
+        color: theme('colors.admin.text.secondary') !important;
+    }
+
+    html:not(.dark) .admin-theme label,
+    html:not(.dark) .customer-theme label {
+        color: theme('colors.gray.600') !important;
+    }
+
+    html.dark .admin-theme table,
+    html.dark .customer-theme table {
+        border-color: theme('colors.admin.border') !important;
+    }
+
+    html:not(.dark) .admin-theme table,
+    html:not(.dark) .customer-theme table {
+        border-color: theme('colors.gray.200') !important;
+    }
+
+    html.dark .admin-theme table tbody tr + tr td,
+    html.dark .admin-theme table tbody tr + tr th,
+    html.dark .customer-theme table tbody tr + tr td,
+    html.dark .customer-theme table tbody tr + tr th {
+        border-top: 1px solid theme('colors.admin.border');
+    }
+
+    html:not(.dark) .admin-theme table tbody tr + tr td,
+    html:not(.dark) .admin-theme table tbody tr + tr th,
+    html:not(.dark) .customer-theme table tbody tr + tr td,
+    html:not(.dark) .customer-theme table tbody tr + tr th {
+        border-top: 1px solid theme('colors.gray.200');
+    }
+
+    html.dark .admin-theme table thead,
+    html.dark .customer-theme table thead {
+        background-color: rgb(255 255 255 / 0.05) !important;
+    }
+
+    html:not(.dark) .admin-theme table thead,
+    html:not(.dark) .customer-theme table thead {
+        background-color: theme('colors.gray.50') !important;
+    }
+
+    html.dark .admin-theme table th,
+    html.dark .customer-theme table th {
+        color: theme('colors.admin.text.secondary') !important;
+    }
+
+    html:not(.dark) .admin-theme table th,
+    html:not(.dark) .customer-theme table th {
+        color: theme('colors.gray.600') !important;
+    }
+
+    html.dark .admin-theme table td,
+    html.dark .customer-theme table td {
+        color: theme('colors.admin.text.primary') !important;
+    }
+
+    html:not(.dark) .admin-theme table td,
+    html:not(.dark) .customer-theme table td {
+        color: theme('colors.gray.900') !important;
+    }
+
+    html.dark .admin-theme .bg-white,
+    html.dark .customer-theme .bg-white,
+    html.dark .admin-theme .dark\:bg-gray-800,
+    html.dark .customer-theme .dark\:bg-gray-800 {
+        background-color: theme('colors.admin.sidebar') !important;
+    }
+
+    html.dark .admin-theme .bg-gray-50,
+    html.dark .customer-theme .bg-gray-50,
+    html.dark .admin-theme .dark\:bg-gray-900,
+    html.dark .customer-theme .dark\:bg-gray-900 {
+        background-color: theme('colors.admin.main') !important;
+    }
+
+    html.dark .admin-theme .text-gray-900,
+    html.dark .customer-theme .text-gray-900,
+    html.dark .admin-theme .dark\:text-gray-100,
+    html.dark .customer-theme .dark\:text-gray-100 {
+        color: theme('colors.admin.text.primary') !important;
+    }
+
+    html.dark .admin-theme .text-gray-700,
+    html.dark .customer-theme .text-gray-700,
+    html.dark .admin-theme .text-gray-600,
+    html.dark .customer-theme .text-gray-600,
+    html.dark .admin-theme .text-gray-500,
+    html.dark .customer-theme .text-gray-500,
+    html.dark .admin-theme .text-gray-400,
+    html.dark .customer-theme .text-gray-400,
+    html.dark .admin-theme .dark\:text-gray-400,
+    html.dark .customer-theme .dark\:text-gray-400,
+    html.dark .admin-theme .dark\:text-gray-300,
+    html.dark .customer-theme .dark\:text-gray-300 {
+        color: theme('colors.admin.text.secondary') !important;
+    }
+
+    html.dark .admin-theme .border-gray-200,
+    html.dark .customer-theme .border-gray-200,
+    html.dark .admin-theme .border-gray-300,
+    html.dark .customer-theme .border-gray-300,
+    html.dark .admin-theme .dark\:border-gray-700,
+    html.dark .customer-theme .dark\:border-gray-700,
+    html.dark .admin-theme .dark\:border-gray-600,
+    html.dark .customer-theme .dark\:border-gray-600 {
+        border-color: theme('colors.admin.border') !important;
+    }
+
+    html:not(.dark) .admin-theme .bg-admin-sidebar,
+    html:not(.dark) .customer-theme .bg-admin-sidebar {
+        background-color: theme('colors.white') !important;
+    }
+
+    html:not(.dark) .admin-theme .bg-admin-main,
+    html:not(.dark) .customer-theme .bg-admin-main {
+        background-color: theme('colors.gray.50') !important;
+    }
+
+    html:not(.dark) .admin-theme .border-admin-border,
+    html:not(.dark) .customer-theme .border-admin-border {
+        border-color: theme('colors.gray.200') !important;
+    }
+
+    html:not(.dark) .admin-theme .text-admin-text-primary,
+    html:not(.dark) .customer-theme .text-admin-text-primary {
+        color: theme('colors.gray.900') !important;
+    }
+
+    html:not(.dark) .admin-theme .text-admin-text-secondary,
+    html:not(.dark) .customer-theme .text-admin-text-secondary {
+        color: theme('colors.gray.600') !important;
+    }
+
+    html:not(.dark) .admin-theme .bg-white\/10,
+    html:not(.dark) .customer-theme .bg-white\/10 {
+        background-color: theme('colors.gray.100') !important;
+    }
+
+    html:not(.dark) .admin-theme .bg-white\/5,
+    html:not(.dark) .customer-theme .bg-white\/5 {
+        background-color: theme('colors.gray.50') !important;
+    }
+
+    html:not(.dark) .admin-theme .hover\:bg-white\/5:hover,
+    html:not(.dark) .customer-theme .hover\:bg-white\/5:hover {
+        background-color: theme('colors.gray.100') !important;
+    }
+
+    .admin-theme .activities-pagination nav .-space-x-px {
+        gap: 0.5rem;
+    }
+
+    .admin-theme .activities-pagination nav .-space-x-px > :not([hidden]) ~ :not([hidden]) {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .admin-theme .activities-pagination nav .-ml-px {
+        margin-left: 0 !important;
+    }
+
+    @media (min-width: 1024px) {
+        html[dir="rtl"] .admin-theme .lg\:pl-64,
+        html[dir="rtl"] .customer-theme .lg\:pl-64 {
+            padding-left: 0 !important;
+            padding-right: 16rem !important;
+        }
+    }
+
+    html[dir="rtl"] aside[data-sidebar="app"] {
+        left: auto !important;
+        right: 0 !important;
+        border-right-width: 0 !important;
+        border-left-width: 1px !important;
+        transform: translateX(100%) !important;
+    }
+
+    html[dir="rtl"] aside[data-sidebar="app"].translate-x-0 {
+        transform: translateX(0) !important;
+    }
+
+    @media (min-width: 1024px) {
+        html[dir="rtl"] aside[data-sidebar="app"] {
+            transform: translateX(0) !important;
+        }
+    }
+
+    html[dir="rtl"] aside[data-sidebar="app"] button[aria-label="Close sidebar"] {
+        right: auto !important;
+        left: 0 !important;
+    }
+
+    html[dir="rtl"] .customer-theme table th.text-left,
+    html[dir="rtl"] .customer-theme table td.text-left {
+        text-align: right !important;
+    }
+
+    html[dir="rtl"] .customer-theme table th.text-right,
+    html[dir="rtl"] .customer-theme table td.text-right {
+        text-align: left !important;
+    }
+
+    html[dir="rtl"] .customer-theme table td .justify-end {
+        justify-content: flex-start !important;
+    }
+
+    html[dir="rtl"] .customer-theme table td .justify-start {
+        justify-content: flex-end !important;
+    }
+
+    html[dir="rtl"] .customer-theme table {
+        direction: rtl;
+    }
+
+    html[dir="rtl"] .customer-theme .ml-2 {
+        margin-left: 0 !important;
+        margin-right: 0.5rem !important;
+    }
+
+    html[dir="rtl"] .customer-theme .ml-3 {
+        margin-left: 0 !important;
+        margin-right: 0.75rem !important;
+    }
+
+    html[dir="rtl"] .customer-theme .ml-5 {
+        margin-left: 0 !important;
+        margin-right: 1.25rem !important;
+    }
+
+    html[dir="rtl"] .customer-theme .mr-2 {
+        margin-right: 0 !important;
+        margin-left: 0.5rem !important;
+    }
+}
+

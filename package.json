@@ -1,0 +1,48 @@
+{
+    "name": "mailzen",
+    "version": "1.0.0",
+    "description": "MailZen - Email Marketing SaaS Platform",
+    "author": "MOPARA PAIR AYAT & Fatema Binte Mariam",
+    "contributors": [
+        "Fatema Binte Mariam <fatemabintemariam@gmail.com>"
+    ],
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite --force",
+        "dev:clear": "rm -rf node_modules/.vite && vite --force",
+        "build": "vite build",
+        "build:client": "node scripts/build-client.mjs",
+        "build:client:zip": "node scripts/build-client.mjs --out client-build --zip --zip-folder mailzen --clean",
+        "build:client:zip-flat": "node scripts/build-client.mjs --out client-build --zip --zip-flat --clean",
+        "build:personal": "node scripts/build-personal.mjs",
+        "build:personal:zip": "node scripts/build-personal.mjs --out personal-build --zip --zip-folder mailzen --clean",
+        "build:personal:zip-flat": "node scripts/build-personal.mjs --out personal-build --zip --zip-flat --clean",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+        "@alpinejs/collapse": "^3.13.5",
+        "@tailwindcss/forms": "^0.5.7",
+        "@tailwindcss/typography": "^0.5.10",
+        "alpinejs": "^3.13.3",
+        "autoprefixer": "^10.4.16",
+        "axios": "^1.6.2",
+        "laravel-vite-plugin": "^1.3.0",
+        "postcss": "^8.4.32",
+        "tailwindcss": "^3.4.0",
+        "vite": "^6.4.1"
+    },
+    "dependencies": {
+        "@coltorapps/builder": "^0.2.4",
+        "@coltorapps/builder-react": "^0.2.4",
+        "@dagrejs/dagre": "^1.1.8",
+        "@heroicons/vue": "^2.1.1",
+        "@hotwired/turbo": "^8.0.13",
+        "@vitejs/plugin-react": "^4.7.0",
+        "grapesjs": "^0.21.7",
+        "grapesjs-preset-newsletter": "^1.0.2",
+        "react": "^19.2.3",
+        "react-dom": "^19.2.3",
+        "reactflow": "^11.11.4"
+    }
+}

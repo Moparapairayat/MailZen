@@ -1,0 +1,30 @@
+{
+  "name": "Product Review Request",
+  "description": "Ask customers to leave a review after their purchase",
+  "category": "ecommerce",
+  "subcategory": "review_request",
+  "thumbnail": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "review_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/F97316/FFFFFF?text=STORE" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#F97316" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "title", "type": "heading", "values": { "text": "How Did We Do?", "headingType": "h1", "fontSize": "28px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "30px 20px 15px 20px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 170%; text-align: center;\">We hope you're loving your recent purchase! Your feedback helps other shoppers and helps us improve.</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_product", "cells": [1], "columns": [{ "id": "col_product", "contents": [
+          { "id": "product", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 20px; padding: 20px; background: #F9FAFB; border-radius: 12px;\"><div style=\"width: 100px; height: 100px; background: #E5E7EB; border-radius: 8px; flex-shrink: 0;\"></div><div><p style=\"color: #111827; font-weight: 600; font-size: 16px;\">Premium Wireless Headphones</p><p style=\"color: #6B7280; font-size: 14px; margin-top: 5px;\">Purchased on Jan 10, 2026</p><p style=\"color: #F97316; font-size: 24px; margin-top: 10px;\">⭐⭐⭐⭐⭐</p></div></div>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "review_btn", "type": "button", "values": { "text": "Write a Review", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#F97316" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "20px 40px 15px 40px" } },
+          { "id": "time", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF; font-size: 13px; text-align: center;\">Takes less than 2 minutes</p>", "containerPadding": "0px 20px 25px 20px" } }
+        ] }], "values": { "backgroundColor": "#FFF7ED" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">Thank you for shopping with us!</p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your Store | <a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

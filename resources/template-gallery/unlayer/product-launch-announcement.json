@@ -1,0 +1,345 @@
+{
+  "name": "Product Launch Announcement",
+  "description": "Announce new product launches, features and updates with style",
+  "category": "marketing",
+  "subcategory": "product_promotion",
+  "thumbnail": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "product_launch_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_header",
+              "contents": [
+                {
+                  "id": "header_logo",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/140x45/000000/FFFFFF?text=BRAND"
+                    },
+                    "width": "140px",
+                    "textAlign": "center",
+                    "containerPadding": "25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#000000"
+          }
+        },
+        {
+          "id": "row_badge",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_badge",
+              "contents": [
+                {
+                  "id": "new_badge",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;\">✨ Just Launched</p>",
+                    "textAlign": "center",
+                    "containerPadding": "40px 20px 20px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#000000"
+          }
+        },
+        {
+          "id": "row_hero",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_hero",
+              "contents": [
+                {
+                  "id": "hero_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Introducing Our<br/>Revolutionary New Product",
+                    "headingType": "h1",
+                    "fontSize": "36px",
+                    "fontWeight": 800,
+                    "textAlign": "center",
+                    "lineHeight": "120%",
+                    "color": "#FFFFFF",
+                    "containerPadding": "10px 30px 15px 30px"
+                  }
+                },
+                {
+                  "id": "hero_subtitle",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: rgba(255,255,255,0.7); line-height: 160%;\">The future is here. Experience innovation like never before with features that will transform the way you work.</p>",
+                    "fontSize": "17px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 30px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#000000"
+          }
+        },
+        {
+          "id": "row_product_image",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_product_image",
+              "contents": [
+                {
+                  "id": "product_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/500x300/1a1a2e/FFFFFF?text=Product+Image"
+                    },
+                    "width": "100%",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 40px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#000000"
+          }
+        },
+        {
+          "id": "row_features_title",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_features_title",
+              "contents": [
+                {
+                  "id": "features_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "What's New",
+                    "headingType": "h2",
+                    "fontSize": "26px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "40px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_features",
+          "cells": [1, 1, 1],
+          "columns": [
+            {
+              "id": "col_feature1",
+              "contents": [
+                {
+                  "id": "feature1_icon",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"font-size: 32px;\">⚡</p>",
+                    "textAlign": "center",
+                    "containerPadding": "15px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "feature1_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Lightning Fast",
+                    "headingType": "h3",
+                    "fontSize": "16px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "0px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "feature1_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; line-height: 150%;\">3x faster performance than before</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 10px 20px 10px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_feature2",
+              "contents": [
+                {
+                  "id": "feature2_icon",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"font-size: 32px;\">🔒</p>",
+                    "textAlign": "center",
+                    "containerPadding": "15px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "feature2_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Secure by Design",
+                    "headingType": "h3",
+                    "fontSize": "16px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "0px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "feature2_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; line-height: 150%;\">Enterprise-grade security built in</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 10px 20px 10px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_feature3",
+              "contents": [
+                {
+                  "id": "feature3_icon",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"font-size: 32px;\">🎯</p>",
+                    "textAlign": "center",
+                    "containerPadding": "15px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "feature3_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Easy to Use",
+                    "headingType": "h3",
+                    "fontSize": "16px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "0px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "feature3_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; line-height: 150%;\">Intuitive interface, zero learning curve</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 10px 20px 10px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_cta",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_cta",
+              "contents": [
+                {
+                  "id": "cta_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Explore Now",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#000000"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "16px 40px",
+                    "textAlign": "center",
+                    "containerPadding": "15px 30px 40px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_footer",
+              "contents": [
+                {
+                  "id": "footer_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">Questions? Reply to this email or visit our <a href=\"#\" style=\"color: #9CA3AF;\">Help Center</a></p><p style=\"color: #6B7280; margin-top: 15px;\">© 2026 Your Company. All rights reserved.<br/>123 Business Ave, City, Country</p><p style=\"margin-top: 15px;\"><a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a> • <a href=\"#\" style=\"color: #6B7280;\">Privacy Policy</a></p>",
+                    "fontSize": "12px",
+                    "textAlign": "center",
+                    "containerPadding": "30px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F3F4F6"
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#E5E7EB",
+        "contentWidth": "600px",
+        "fontFamily": {
+          "label": "Inter",
+          "value": "'Inter', sans-serif"
+        },
+        "textColor": "#111827"
+      }
+    },
+    "schemaVersion": 21
+  }
+}

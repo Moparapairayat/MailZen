@@ -1,0 +1,32 @@
+{
+  "name": "Thank You Email",
+  "description": "Express gratitude to customers and build lasting relationships",
+  "category": "relationship",
+  "subcategory": "thank_you",
+  "thumbnail": "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "thankyou_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/10B981/FFFFFF?text=BRAND" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#10B981" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 56px;\">🙏</p>", "textAlign": "center", "containerPadding": "35px 20px 15px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "Thank You!", "headingType": "h1", "fontSize": "36px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "message", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%; text-align: center;\">Your support means the world to us. We're incredibly grateful to have you as part of our community.</p>", "fontSize": "16px", "containerPadding": "0px 50px 30px 50px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_personal", "cells": [1], "columns": [{ "id": "col_personal", "contents": [
+          { "id": "personal_note", "type": "text", "values": { "text": "<div style=\"background: #ECFDF5; border-radius: 12px; padding: 25px;\"><p style=\"color: #065F46; font-style: italic; line-height: 170%;\">\"Every customer interaction reminds us why we do what we do. Thank you for being part of our journey and for trusting us with yours.\"</p><p style=\"color: #047857; font-weight: 600; margin-top: 15px;\">— The Entire Team</p></div>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "cta_text", "type": "text", "values": { "text": "<p style=\"color: #6B7280; text-align: center;\">As a token of our appreciation, here's something special:</p>", "fontSize": "14px", "containerPadding": "25px 40px 15px 40px" } },
+          { "id": "gift", "type": "text", "values": { "text": "<div style=\"text-align: center;\"><p style=\"color: #10B981; font-size: 24px; font-weight: 700;\">15% OFF</p><p style=\"color: #6B7280; font-size: 13px;\">Your next purchase with code: <strong>THANKYOU15</strong></p></div>", "containerPadding": "0px 40px 20px 40px" } },
+          { "id": "shop_btn", "type": "button", "values": { "text": "Shop Now", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#10B981" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "0px 40px 30px 40px" } }
+        ] }], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">With gratitude,<br/>Your Brand Team</p><p style=\"color: #6B7280; margin-top: 15px;\"><a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

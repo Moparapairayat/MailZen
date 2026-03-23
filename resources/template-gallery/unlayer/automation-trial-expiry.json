@@ -1,0 +1,33 @@
+{
+  "name": "Trial Expiry Reminder",
+  "description": "Remind users their trial is ending and encourage upgrades",
+  "category": "automation",
+  "subcategory": "trial_expiry",
+  "thumbnail": "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "trial_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/EF4444/FFFFFF?text=APP" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#EF4444" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">⏰</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "Your Trial Ends in 3 Days", "headingType": "h1", "fontSize": "28px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 170%;\">Don't lose access to all the features you've been using. Upgrade now to keep your workflow running smoothly.</p>", "fontSize": "15px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_usage", "cells": [1], "columns": [{ "id": "col_usage", "contents": [
+          { "id": "usage_title", "type": "heading", "values": { "text": "Your Trial Activity", "headingType": "h2", "fontSize": "18px", "fontWeight": 700, "color": "#111827", "containerPadding": "25px 30px 15px 30px" } },
+          { "id": "stats", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-around; text-align: center;\"><div><p style=\"font-size: 28px; font-weight: 700; color: #EF4444;\">47</p><p style=\"color: #6B7280; font-size: 13px;\">Projects Created</p></div><div><p style=\"font-size: 28px; font-weight: 700; color: #EF4444;\">156</p><p style=\"color: #6B7280; font-size: 13px;\">Tasks Completed</p></div><div><p style=\"font-size: 28px; font-weight: 700; color: #EF4444;\">12</p><p style=\"color: #6B7280; font-size: 13px;\">Hours Saved</p></div></div>", "containerPadding": "0px 30px 25px 30px" } }
+        ] }], "values": { "backgroundColor": "#FEF2F2" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "price", "type": "text", "values": { "text": "<p style=\"color: #6B7280; text-align: center;\">Continue for just</p><p style=\"color: #111827; font-size: 36px; font-weight: 700; text-align: center;\">$9<span style=\"font-size: 16px; font-weight: 400;\">/month</span></p>", "containerPadding": "25px 20px 15px 20px" } },
+          { "id": "upgrade_btn", "type": "button", "values": { "text": "Upgrade Now", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#EF4444" }, "borderRadius": "8px", "padding": "16px 40px", "textAlign": "center", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "guarantee", "type": "text", "values": { "text": "<p style=\"color: #6B7280; font-size: 13px; text-align: center;\">✓ Cancel anytime • ✓ 30-day money back guarantee</p>", "containerPadding": "0px 20px 25px 20px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">© 2026 Your App</p><p style=\"color: #6B7280; margin-top: 10px;\"><a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

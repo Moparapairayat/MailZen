@@ -1,0 +1,35 @@
+{
+  "name": "Shipping & Delivery Update",
+  "description": "Order shipping status and delivery tracking template",
+  "category": "transactional",
+  "subcategory": "shipping",
+  "thumbnail": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "shipping_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/3B82F6/FFFFFF?text=STORE" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#3B82F6" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">📦</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "Your Order Has Shipped!", "headingType": "h1", "fontSize": "26px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 10px 20px" } },
+          { "id": "subtitle", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 160%;\">Great news! Your order is on its way. Track your package using the details below.</p>", "fontSize": "15px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_tracking", "cells": [1], "columns": [{ "id": "col_tracking", "contents": [
+          { "id": "tracking_box", "type": "text", "values": { "text": "<div style=\"background: #EFF6FF; border-radius: 12px; padding: 20px; text-align: center;\"><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 8px;\">TRACKING NUMBER</p><p style=\"color: #1D4ED8; font-size: 18px; font-weight: 700; letter-spacing: 2px;\">1Z999AA10123456784</p></div>", "containerPadding": "0px 40px 20px 40px" } },
+          { "id": "track_btn", "type": "button", "values": { "text": "Track Package", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#3B82F6" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "0px 40px 30px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_timeline", "cells": [1], "columns": [{ "id": "col_timeline", "contents": [
+          { "id": "timeline_title", "type": "heading", "values": { "text": "Delivery Status", "headingType": "h2", "fontSize": "18px", "fontWeight": 700, "color": "#111827", "containerPadding": "25px 30px 15px 30px" } },
+          { "id": "step1", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 15px; margin-bottom: 15px;\"><div style=\"width: 24px; height: 24px; background: #10B981; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;\">✓</div><div><p style=\"color: #111827; font-weight: 500;\">Order Confirmed</p><p style=\"color: #6B7280; font-size: 13px;\">Jan 15, 2026 - 10:30 AM</p></div></div>", "containerPadding": "0px 30px" } },
+          { "id": "step2", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 15px; margin-bottom: 15px;\"><div style=\"width: 24px; height: 24px; background: #10B981; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;\">✓</div><div><p style=\"color: #111827; font-weight: 500;\">Shipped</p><p style=\"color: #6B7280; font-size: 13px;\">Jan 16, 2026 - 2:15 PM</p></div></div>", "containerPadding": "0px 30px" } },
+          { "id": "step3", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 15px; margin-bottom: 15px;\"><div style=\"width: 24px; height: 24px; background: #3B82F6; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;\">●</div><div><p style=\"color: #111827; font-weight: 500;\">In Transit</p><p style=\"color: #6B7280; font-size: 13px;\">Expected delivery: Jan 18-19</p></div></div>", "containerPadding": "0px 30px" } },
+          { "id": "step4", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 15px;\"><div style=\"width: 24px; height: 24px; background: #E5E7EB; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #9CA3AF; font-size: 12px;\">○</div><div><p style=\"color: #9CA3AF; font-weight: 500;\">Delivered</p><p style=\"color: #9CA3AF; font-size: 13px;\">Pending</p></div></div>", "containerPadding": "0px 30px 25px 30px" } }
+        ] }], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">Questions? <a href=\"#\" style=\"color: #9CA3AF;\">Contact Support</a></p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your Store</p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

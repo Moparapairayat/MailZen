@@ -1,0 +1,186 @@
+{
+  "name": "Email Verification OTP",
+  "description": "Secure email verification template with OTP code",
+  "category": "transactional",
+  "subcategory": "verification",
+  "thumbnail": "https://images.unsplash.com/photo-1633265486064-086b219458ec?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "verification_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_header",
+              "contents": [
+                {
+                  "id": "logo",
+                  "type": "image",
+                  "values": {
+                    "src": { "url": "https://via.placeholder.com/140x45/4F46E5/FFFFFF?text=LOGO" },
+                    "width": "140px",
+                    "textAlign": "center",
+                    "containerPadding": "30px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": { "backgroundColor": "#FFFFFF" }
+        },
+        {
+          "id": "row_icon",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_icon",
+              "contents": [
+                {
+                  "id": "shield_icon",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"font-size: 48px;\">🔐</p>",
+                    "textAlign": "center",
+                    "containerPadding": "30px 20px 15px 20px"
+                  }
+                },
+                {
+                  "id": "title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Verify Your Email",
+                    "headingType": "h1",
+                    "fontSize": "28px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "0px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "subtitle",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; line-height: 160%;\">Please use the verification code below to complete your registration. This code will expire in 10 minutes.</p>",
+                    "fontSize": "15px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 25px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": { "backgroundColor": "#FFFFFF" }
+        },
+        {
+          "id": "row_otp",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_otp",
+              "contents": [
+                {
+                  "id": "otp_box",
+                  "type": "text",
+                  "values": {
+                    "text": "<div style=\"background: #F3F4F6; border-radius: 12px; padding: 25px; text-align: center;\"><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 10px; letter-spacing: 1px;\">YOUR VERIFICATION CODE</p><p style=\"color: #111827; font-size: 36px; font-weight: 700; letter-spacing: 8px; font-family: monospace;\">847291</p></div>",
+                    "containerPadding": "0px 50px 30px 50px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": { "backgroundColor": "#FFFFFF" }
+        },
+        {
+          "id": "row_alt",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_alt",
+              "contents": [
+                {
+                  "id": "alt_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280;\">Or click the button below to verify directly:</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 15px 20px"
+                  }
+                },
+                {
+                  "id": "verify_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Verify Email Address",
+                    "href": { "name": "web", "values": { "href": "#", "target": "_blank" } },
+                    "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#4F46E5" },
+                    "borderRadius": "8px",
+                    "padding": "14px 32px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 30px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": { "backgroundColor": "#FFFFFF" }
+        },
+        {
+          "id": "row_warning",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_warning",
+              "contents": [
+                {
+                  "id": "warning_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">⚠️ If you didn't create an account, you can safely ignore this email.</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "20px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": { "backgroundColor": "#F9FAFB" }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_footer",
+              "contents": [
+                {
+                  "id": "footer_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">© 2026 Your Company. All rights reserved.<br/>123 Business Street, City, Country</p>",
+                    "fontSize": "12px",
+                    "textAlign": "center",
+                    "containerPadding": "25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": { "backgroundColor": "#1F2937" }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#E5E7EB",
+        "contentWidth": "600px",
+        "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" }
+      }
+    },
+    "schemaVersion": 21
+  }
+}

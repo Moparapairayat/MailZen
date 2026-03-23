@@ -1,0 +1,32 @@
+{
+  "name": "Maintenance & Downtime Notice",
+  "description": "Notify users about scheduled maintenance or system downtime",
+  "category": "support",
+  "subcategory": "maintenance",
+  "thumbnail": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "maintenance_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/F59E0B/FFFFFF?text=APP" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#F59E0B" } },
+        { "id": "row_alert", "cells": [1], "columns": [{ "id": "col_alert", "contents": [{ "id": "alert_text", "type": "text", "values": { "text": "<p style=\"color: #92400E; font-weight: 600;\">⚠️ SCHEDULED MAINTENANCE</p>", "fontSize": "13px", "textAlign": "center", "containerPadding": "15px 20px" } }] }], "values": { "backgroundColor": "#FEF3C7" } },
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">🔧</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "Scheduled Maintenance", "headingType": "h1", "fontSize": "28px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 170%; text-align: center;\">We're performing scheduled maintenance to improve your experience. During this time, our services will be temporarily unavailable.</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_schedule", "cells": [1], "columns": [{ "id": "col_schedule", "contents": [
+          { "id": "schedule_box", "type": "text", "values": { "text": "<div style=\"background: #F3F4F6; border-radius: 12px; padding: 25px;\"><div style=\"display: flex; justify-content: space-between; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #E5E7EB;\"><div><p style=\"color: #6B7280; font-size: 12px;\">START TIME</p><p style=\"color: #111827; font-weight: 600;\">Jan 20, 2026 at 2:00 AM EST</p></div><div style=\"text-align: right;\"><p style=\"color: #6B7280; font-size: 12px;\">END TIME</p><p style=\"color: #111827; font-weight: 600;\">Jan 20, 2026 at 6:00 AM EST</p></div></div><div style=\"text-align: center;\"><p style=\"color: #6B7280; font-size: 12px;\">ESTIMATED DURATION</p><p style=\"color: #F59E0B; font-size: 24px; font-weight: 700;\">4 Hours</p></div></div>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_impact", "cells": [1], "columns": [{ "id": "col_impact", "contents": [
+          { "id": "impact_title", "type": "heading", "values": { "text": "What to Expect", "headingType": "h2", "fontSize": "18px", "fontWeight": 700, "color": "#111827", "containerPadding": "25px 30px 15px 30px" } },
+          { "id": "impact_list", "type": "text", "values": { "text": "<p style=\"color: #374151; margin-bottom: 10px;\">• Website and app will be temporarily unavailable</p><p style=\"color: #374151; margin-bottom: 10px;\">• API services will return maintenance mode responses</p><p style=\"color: #374151;\">• All data will be preserved - no action needed on your part</p>", "fontSize": "14px", "containerPadding": "0px 30px 25px 30px" } }
+        ] }], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">Questions? Contact support@company.com</p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your App</p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

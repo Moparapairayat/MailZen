@@ -1,0 +1,30 @@
+{
+  "name": "Support Ticket Update",
+  "description": "Keep customers informed about their support ticket status",
+  "category": "support",
+  "subcategory": "ticket_update",
+  "thumbnail": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "ticket_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/0EA5E9/FFFFFF?text=SUPPORT" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#0EA5E9" } },
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "title", "type": "heading", "values": { "text": "Ticket Update", "headingType": "h1", "fontSize": "26px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "30px 20px 15px 20px" } },
+          { "id": "ticket_info", "type": "text", "values": { "text": "<div style=\"background: #F0F9FF; border-radius: 8px; padding: 20px; text-align: center;\"><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 5px;\">TICKET NUMBER</p><p style=\"color: #0369A1; font-size: 18px; font-weight: 700;\">#TKT-2026-84729</p></div>", "containerPadding": "0px 40px 20px 40px" } },
+          { "id": "status", "type": "text", "values": { "text": "<p style=\"text-align: center;\"><span style=\"background: #FEF3C7; color: #92400E; padding: 6px 16px; border-radius: 20px; font-weight: 600; font-size: 13px;\">⏳ In Progress</span></p>", "containerPadding": "0px 20px 20px 20px" } },
+          { "id": "message", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 170%;\">Hi there,</p><p style=\"color: #374151; line-height: 170%; margin-top: 10px;\">We wanted to let you know that our team is actively working on your support request. Here's an update:</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "update_box", "type": "text", "values": { "text": "<div style=\"background: #F9FAFB; border-left: 4px solid #0EA5E9; padding: 15px 20px;\"><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 8px;\">Latest Update - Jan 16, 2026 at 2:30 PM</p><p style=\"color: #374151; line-height: 160%;\">Our technical team has identified the issue and is implementing a fix. We expect to have this resolved within the next 24 hours.</p></div>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "view_btn", "type": "button", "values": { "text": "View Ticket Details", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#0EA5E9" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "25px 40px" } },
+          { "id": "reply_text", "type": "text", "values": { "text": "<p style=\"color: #6B7280; font-size: 13px; text-align: center;\">You can reply directly to this email to add more information.</p>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">© 2026 Support Team</p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

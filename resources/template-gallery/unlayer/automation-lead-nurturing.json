@@ -1,0 +1,32 @@
+{
+  "name": "Lead Nurturing",
+  "description": "Educate and nurture leads over time with valuable content",
+  "category": "automation",
+  "subcategory": "lead_nurturing",
+  "thumbnail": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "nurture_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/0EA5E9/FFFFFF?text=BRAND" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#0EA5E9" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "title", "type": "heading", "values": { "text": "Quick Tip: Boost Your Results 📈", "headingType": "h1", "fontSize": "26px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "30px 30px 15px 30px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Hi {{first_name}},</p><p style=\"color: #374151; line-height: 180%; margin-top: 10px;\">Here's a valuable insight to help you get better results this week:</p>", "fontSize": "15px", "containerPadding": "0px 40px 20px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "tip_box", "type": "text", "values": { "text": "<div style=\"background: #F0F9FF; border-radius: 12px; padding: 25px;\"><p style=\"color: #0369A1; font-weight: 700; font-size: 18px; margin-bottom: 15px;\">💡 Pro Tip: The 80/20 Rule</p><p style=\"color: #374151; line-height: 170%;\">Focus 80% of your effort on the 20% of activities that drive results. Most successful businesses we work with report that identifying their high-impact activities led to a <strong>40% increase in productivity</strong>.</p></div>", "containerPadding": "0px 40px 20px 40px" } },
+          { "id": "action", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 170%;\"><strong>Your action item:</strong> This week, identify your top 3 activities that generate the most results and schedule dedicated time for them.</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_resource", "cells": [1], "columns": [{ "id": "col_resource", "contents": [
+          { "id": "resource_title", "type": "text", "values": { "text": "<p style=\"color: #374151; font-weight: 600;\">📚 Recommended Resource</p>", "fontSize": "14px", "containerPadding": "25px 40px 10px 40px" } },
+          { "id": "resource_link", "type": "text", "values": { "text": "<div style=\"background: #F9FAFB; border-radius: 8px; padding: 15px;\"><p style=\"color: #111827; font-weight: 500;\">Free Guide: The Productivity Playbook</p><p style=\"color: #6B7280; font-size: 13px; margin-top: 5px;\">15 strategies to work smarter, not harder</p></div>", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "download_btn", "type": "button", "values": { "text": "Download Free Guide", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#0EA5E9" }, "borderRadius": "8px", "padding": "12px 28px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">To your success,<br/>The Team</p><p style=\"color: #6B7280; margin-top: 15px;\">© 2026 Your Brand | <a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

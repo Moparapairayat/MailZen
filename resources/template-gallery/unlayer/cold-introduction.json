@@ -1,0 +1,27 @@
+{
+  "name": "Cold Introduction",
+  "description": "Professional cold outreach email for B2B sales and lead generation",
+  "category": "cold",
+  "subcategory": "introduction",
+  "thumbnail": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "cold_intro_body",
+      "rows": [
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "greeting", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Hi {{first_name}},</p>", "fontSize": "15px", "containerPadding": "40px 40px 15px 40px" } },
+          { "id": "opener", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">I noticed that {{company_name}} has been expanding rapidly in the {{industry}} space – congrats on the recent growth!</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "value_prop", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">I'm reaching out because we've helped similar companies like [Client A] and [Client B] increase their {{metric}} by 40% within 3 months using our {{solution}}.</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "social_proof", "type": "text", "values": { "text": "<div style=\"background: #F3F4F6; border-left: 4px solid #4F46E5; padding: 15px 20px; margin: 15px 0;\"><p style=\"color: #374151; font-style: italic;\">\"Working with [Your Company] transformed our operations. We saw results within the first month.\"</p><p style=\"color: #6B7280; font-size: 13px; margin-top: 8px;\">— Sarah Johnson, VP of Sales at TechCorp</p></div>", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "cta_text", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Would you be open to a quick 15-minute call this week to explore if we could help {{company_name}} achieve similar results?</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "calendar_link", "type": "text", "values": { "text": "<p style=\"color: #374151;\">👉 <a href=\"#\" style=\"color: #4F46E5; font-weight: 500;\">Book a time on my calendar</a></p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } },
+          { "id": "signature", "type": "text", "values": { "text": "<p style=\"color: #374151;\">Best,</p><p style=\"color: #111827; font-weight: 600; margin-top: 5px;\">John Smith</p><p style=\"color: #6B7280; font-size: 14px;\">Account Executive at Your Company</p><p style=\"color: #6B7280; font-size: 14px;\">john@yourcompany.com | (555) 123-4567</p>", "containerPadding": "0px 40px 40px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">© 2026 Your Company | <a href=\"#\" style=\"color: #9CA3AF;\">Unsubscribe</a></p>", "fontSize": "11px", "textAlign": "center", "containerPadding": "20px" } }] }], "values": { "backgroundColor": "#F9FAFB" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

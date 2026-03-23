@@ -1,0 +1,34 @@
+{
+  "name": "Abandoned Cart",
+  "description": "Recover lost sales with abandoned cart reminders",
+  "category": "automation",
+  "subcategory": "abandoned_cart",
+  "thumbnail": "https://images.unsplash.com/photo-1557821552-17105176677c?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "cart_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/F59E0B/FFFFFF?text=STORE" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#F59E0B" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">🛒</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "You Left Something Behind!", "headingType": "h1", "fontSize": "28px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 160%;\">Your cart is waiting for you. Complete your purchase before these items sell out!</p>", "fontSize": "15px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_items", "cells": [1], "columns": [{ "id": "col_items", "contents": [
+          { "id": "items_title", "type": "heading", "values": { "text": "Your Cart", "headingType": "h2", "fontSize": "18px", "fontWeight": 700, "color": "#111827", "containerPadding": "25px 30px 15px 30px" } },
+          { "id": "item1", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 15px; padding: 15px; background: #F9FAFB; border-radius: 8px; margin-bottom: 10px;\"><div style=\"width: 80px; height: 80px; background: #E5E7EB; border-radius: 8px;\"></div><div style=\"flex: 1;\"><p style=\"color: #111827; font-weight: 600;\">Premium Wireless Headphones</p><p style=\"color: #6B7280; font-size: 13px;\">Color: Black</p><p style=\"color: #F59E0B; font-weight: 700; margin-top: 5px;\">$149.99</p></div></div>", "containerPadding": "0px 30px" } },
+          { "id": "item2", "type": "text", "values": { "text": "<div style=\"display: flex; gap: 15px; padding: 15px; background: #F9FAFB; border-radius: 8px;\"><div style=\"width: 80px; height: 80px; background: #E5E7EB; border-radius: 8px;\"></div><div style=\"flex: 1;\"><p style=\"color: #111827; font-weight: 600;\">Leather Laptop Sleeve</p><p style=\"color: #6B7280; font-size: 13px;\">Size: 15\"</p><p style=\"color: #F59E0B; font-weight: 700; margin-top: 5px;\">$59.99</p></div></div>", "containerPadding": "0px 30px 20px 30px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "total", "type": "text", "values": { "text": "<p style=\"color: #111827; font-size: 18px;\">Cart Total: <strong>$209.98</strong></p>", "textAlign": "center", "containerPadding": "20px 20px 15px 20px" } },
+          { "id": "checkout_btn", "type": "button", "values": { "text": "Complete Your Purchase", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#F59E0B" }, "borderRadius": "8px", "padding": "16px 40px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFBEB" } },
+        { "id": "row_urgency", "cells": [1], "columns": [{ "id": "col_urgency", "contents": [{ "id": "urgency", "type": "text", "values": { "text": "<p style=\"color: #DC2626;\">⏰ Your cart will be saved for 48 hours</p>", "fontSize": "13px", "textAlign": "center", "containerPadding": "15px 20px" } }] }], "values": { "backgroundColor": "#FEF2F2" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">© 2026 Your Store</p><p style=\"color: #6B7280; margin-top: 10px;\"><a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

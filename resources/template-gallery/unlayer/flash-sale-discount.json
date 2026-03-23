@@ -1,0 +1,337 @@
+{
+  "name": "Flash Sale & Discount",
+  "description": "Eye-catching template for flash sales, coupons and limited-time deals",
+  "category": "marketing",
+  "subcategory": "discount_offer",
+  "thumbnail": "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "flash_sale_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_header",
+              "contents": [
+                {
+                  "id": "header_logo",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/130x40/DC2626/FFFFFF?text=STORE"
+                    },
+                    "width": "130px",
+                    "textAlign": "center",
+                    "containerPadding": "20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#DC2626"
+          }
+        },
+        {
+          "id": "row_urgency",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_urgency",
+              "contents": [
+                {
+                  "id": "urgency_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #FEF2F2; font-weight: 600; letter-spacing: 2px;\">⏰ HURRY! OFFER ENDS IN 24 HOURS ⏰</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "15px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#991B1B"
+          }
+        },
+        {
+          "id": "row_hero",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_hero",
+              "contents": [
+                {
+                  "id": "sale_label",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #DC2626; font-weight: 700; letter-spacing: 3px;\">FLASH SALE</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "40px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "discount_amount",
+                  "type": "heading",
+                  "values": {
+                    "text": "50% OFF",
+                    "headingType": "h1",
+                    "fontSize": "72px",
+                    "fontWeight": 900,
+                    "textAlign": "center",
+                    "lineHeight": "100%",
+                    "color": "#111827",
+                    "containerPadding": "0px 20px"
+                  }
+                },
+                {
+                  "id": "discount_subtitle",
+                  "type": "heading",
+                  "values": {
+                    "text": "EVERYTHING",
+                    "headingType": "h2",
+                    "fontSize": "28px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#374151",
+                    "containerPadding": "5px 20px 20px 20px"
+                  }
+                },
+                {
+                  "id": "hero_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; line-height: 160%;\">Don't miss out on our biggest sale of the season! Shop now and save big on all your favorite items.</p>",
+                    "fontSize": "16px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 25px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_coupon",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_coupon",
+              "contents": [
+                {
+                  "id": "coupon_box",
+                  "type": "text",
+                  "values": {
+                    "text": "<div style=\"background: #FEF2F2; border: 2px dashed #DC2626; border-radius: 8px; padding: 20px; text-align: center;\"><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 8px;\">USE CODE AT CHECKOUT</p><p style=\"color: #DC2626; font-size: 28px; font-weight: 800; letter-spacing: 4px;\">FLASH50</p></div>",
+                    "containerPadding": "0px 50px 30px 50px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_cta",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_cta",
+              "contents": [
+                {
+                  "id": "cta_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "SHOP NOW & SAVE 50%",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#DC2626"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "18px 40px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 40px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_products",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_products_title",
+              "contents": [
+                {
+                  "id": "products_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Top Picks on Sale",
+                    "headingType": "h2",
+                    "fontSize": "22px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "35px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB"
+          }
+        },
+        {
+          "id": "row_product_grid",
+          "cells": [1, 1],
+          "columns": [
+            {
+              "id": "col_product1",
+              "contents": [
+                {
+                  "id": "product1_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/240x180/E5E7EB/374151?text=Product+1"
+                    },
+                    "width": "100%",
+                    "containerPadding": "0px 10px"
+                  }
+                },
+                {
+                  "id": "product1_name",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #111827; font-weight: 600;\">Premium Product</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "10px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "product1_price",
+                  "type": "text",
+                  "values": {
+                    "text": "<p><span style=\"color: #9CA3AF; text-decoration: line-through;\">$99.99</span> <span style=\"color: #DC2626; font-weight: 700;\">$49.99</span></p>",
+                    "fontSize": "15px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 10px 15px 10px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_product2",
+              "contents": [
+                {
+                  "id": "product2_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/240x180/E5E7EB/374151?text=Product+2"
+                    },
+                    "width": "100%",
+                    "containerPadding": "0px 10px"
+                  }
+                },
+                {
+                  "id": "product2_name",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #111827; font-weight: 600;\">Best Seller Item</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "10px 10px 5px 10px"
+                  }
+                },
+                {
+                  "id": "product2_price",
+                  "type": "text",
+                  "values": {
+                    "text": "<p><span style=\"color: #9CA3AF; text-decoration: line-through;\">$79.99</span> <span style=\"color: #DC2626; font-weight: 700;\">$39.99</span></p>",
+                    "fontSize": "15px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 10px 15px 10px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB",
+            "containerPadding": "0px 20px 30px 20px"
+          }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_footer",
+              "contents": [
+                {
+                  "id": "footer_terms",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">*Offer valid until midnight. Discount applies to all items. Cannot be combined with other offers.</p>",
+                    "fontSize": "11px",
+                    "textAlign": "center",
+                    "containerPadding": "25px 30px 15px 30px"
+                  }
+                },
+                {
+                  "id": "footer_links",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280;\">© 2026 Your Store. All rights reserved.</p><p style=\"margin-top: 10px;\"><a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a> • <a href=\"#\" style=\"color: #6B7280;\">View in Browser</a></p>",
+                    "fontSize": "12px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#1F2937"
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#E5E7EB",
+        "contentWidth": "600px",
+        "fontFamily": {
+          "label": "Inter",
+          "value": "'Inter', sans-serif"
+        },
+        "textColor": "#111827"
+      }
+    },
+    "schemaVersion": 21
+  }
+}

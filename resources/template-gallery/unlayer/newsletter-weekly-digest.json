@@ -1,0 +1,366 @@
+{
+  "name": "Weekly Newsletter Digest",
+  "description": "Clean newsletter template for blog posts, updates and announcements",
+  "category": "marketing",
+  "subcategory": "newsletter",
+  "thumbnail": "https://images.unsplash.com/photo-1557200134-90327ee9fafa?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "newsletter_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_header",
+              "contents": [
+                {
+                  "id": "logo_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/150x50/4F46E5/FFFFFF?text=LOGO"
+                    },
+                    "width": "150px",
+                    "textAlign": "center",
+                    "containerPadding": "30px 10px 20px 10px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#4F46E5"
+          }
+        },
+        {
+          "id": "row_hero",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_hero",
+              "contents": [
+                {
+                  "id": "hero_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Your Weekly Digest",
+                    "headingType": "h1",
+                    "fontSize": "32px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "lineHeight": "130%",
+                    "color": "#FFFFFF",
+                    "containerPadding": "30px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "hero_date",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: rgba(255,255,255,0.8);\">January 15, 2026 • Issue #42</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 30px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#4F46E5"
+          }
+        },
+        {
+          "id": "row_intro",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_intro",
+              "contents": [
+                {
+                  "id": "intro_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"line-height: 170%; color: #374151;\">Hi there! 👋</p><p style=\"line-height: 170%; color: #374151; margin-top: 10px;\">Here's what's new this week. We've been working hard to bring you the latest updates, tips, and resources to help you succeed.</p>",
+                    "fontSize": "16px",
+                    "containerPadding": "30px 30px 20px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_article1",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_article1",
+              "contents": [
+                {
+                  "id": "article1_label",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #4F46E5; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;\">Featured Article</p>",
+                    "fontSize": "12px",
+                    "containerPadding": "20px 30px 5px 30px"
+                  }
+                },
+                {
+                  "id": "article1_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "10 Tips to Boost Your Productivity This Year",
+                    "headingType": "h2",
+                    "fontSize": "22px",
+                    "fontWeight": 700,
+                    "color": "#111827",
+                    "lineHeight": "130%",
+                    "containerPadding": "5px 30px 10px 30px"
+                  }
+                },
+                {
+                  "id": "article1_excerpt",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"line-height: 160%; color: #6B7280;\">Discover actionable strategies to maximize your efficiency and achieve more in less time. From time-blocking to automation tools...</p>",
+                    "fontSize": "15px",
+                    "containerPadding": "0px 30px 15px 30px"
+                  }
+                },
+                {
+                  "id": "article1_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Read More →",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#4F46E5",
+                      "backgroundColor": "transparent"
+                    },
+                    "borderRadius": "0px",
+                    "padding": "0px",
+                    "textAlign": "left",
+                    "containerPadding": "0px 30px 25px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_divider",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_divider",
+              "contents": [
+                {
+                  "id": "divider1",
+                  "type": "divider",
+                  "values": {
+                    "width": "100%",
+                    "border": {
+                      "borderTopWidth": "1px",
+                      "borderTopStyle": "solid",
+                      "borderTopColor": "#E5E7EB"
+                    },
+                    "containerPadding": "0px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_article2",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_article2",
+              "contents": [
+                {
+                  "id": "article2_label",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #10B981; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;\">Quick Tips</p>",
+                    "fontSize": "12px",
+                    "containerPadding": "25px 30px 5px 30px"
+                  }
+                },
+                {
+                  "id": "article2_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "3 Tools We're Loving Right Now",
+                    "headingType": "h2",
+                    "fontSize": "22px",
+                    "fontWeight": 700,
+                    "color": "#111827",
+                    "lineHeight": "130%",
+                    "containerPadding": "5px 30px 10px 30px"
+                  }
+                },
+                {
+                  "id": "article2_excerpt",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"line-height: 160%; color: #6B7280;\">Our team has been testing some amazing new tools. Here are our top picks for streamlining your workflow...</p>",
+                    "fontSize": "15px",
+                    "containerPadding": "0px 30px 15px 30px"
+                  }
+                },
+                {
+                  "id": "article2_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Read More →",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#10B981",
+                      "backgroundColor": "transparent"
+                    },
+                    "borderRadius": "0px",
+                    "padding": "0px",
+                    "textAlign": "left",
+                    "containerPadding": "0px 30px 30px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_cta",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_cta",
+              "contents": [
+                {
+                  "id": "cta_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Want More Content?",
+                    "headingType": "h2",
+                    "fontSize": "24px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "35px 30px 10px 30px"
+                  }
+                },
+                {
+                  "id": "cta_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280;\">Visit our blog for the full archive of articles, tutorials, and resources.</p>",
+                    "fontSize": "15px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 30px 20px 30px"
+                  }
+                },
+                {
+                  "id": "cta_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Visit Our Blog",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#4F46E5"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "14px 28px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 30px 35px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB"
+          }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_footer",
+              "contents": [
+                {
+                  "id": "footer_social",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">Follow us: Twitter • LinkedIn • Facebook</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "25px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "footer_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">You received this email because you subscribed to our newsletter.<br/>123 Business Street, City, Country</p><p style=\"color: #9CA3AF; margin-top: 10px;\"><a href=\"#\" style=\"color: #9CA3AF;\">Unsubscribe</a> • <a href=\"#\" style=\"color: #9CA3AF;\">Preferences</a></p>",
+                    "fontSize": "12px",
+                    "textAlign": "center",
+                    "containerPadding": "10px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#1F2937"
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#E5E7EB",
+        "contentWidth": "600px",
+        "fontFamily": {
+          "label": "Inter",
+          "value": "'Inter', sans-serif"
+        },
+        "textColor": "#111827"
+      }
+    },
+    "schemaVersion": 21
+  }
+}

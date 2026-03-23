@@ -1,0 +1,139 @@
+{
+  "name": "Welcome Email",
+  "description": "A clean welcome email template",
+  "category": "automation",
+  "thumbnail": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": [],
+    "body": {
+      "id": "body_verification_x",
+      "rows": [
+        {
+          "id": "row_logo",
+          "cells": [
+            1
+          ],
+          "columns": [
+            {
+              "id": "col_logo",
+              "contents": [
+                {
+                  "id": "content_image_logo",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/X_logo.jpg"
+                    },
+                    "width": "60px",
+                    "textAlign": "center",
+                    "containerPadding": "40px 10px 20px 10px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "row_main_content",
+          "cells": [
+            1
+          ],
+          "columns": [
+            {
+              "id": "col_content",
+              "contents": [
+                {
+                  "id": "content_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Please verify your email 😀",
+                    "headingType": "h1",
+                    "fontSize": "28px",
+                    "textAlign": "center",
+                    "lineHeight": "120%",
+                    "containerPadding": "10px 30px"
+                  }
+                },
+                {
+                  "id": "content_body_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"line-height: 160%;\">To use X, click the verification button. This helps keep your account secure.</p>",
+                    "fontSize": "16px",
+                    "textAlign": "center",
+                    "containerPadding": "10px 40px"
+                  }
+                },
+                {
+                  "id": "content_button",
+                  "type": "button",
+                  "values": {
+                    "text": "<span style=\"font-size: 16px;\">Verify my account</span>",
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#0061FF"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "12px 25px",
+                    "textAlign": "center",
+                    "containerPadding": "25px 10px"
+                  }
+                },
+                {
+                  "id": "content_notice_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"line-height: 150%; color: #444444;\">You're receiving this email because you have an account in X. If you are not sure why you're receiving this, please contact us by replying to this email.</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "20px 40px"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "row_footer_box",
+          "cells": [
+            1
+          ],
+          "columns": [
+            {
+              "id": "col_footer",
+              "values": {
+                "backgroundColor": "#F3F0F5",
+                "padding": "20px",
+                "borderRadius": "10px"
+              },
+              "contents": [
+                {
+                  "id": "footer_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #888888; font-size: 12px;\">Email specialists use X's intuitive tool to design emails for desktop and mobile, and let our smart algorithm generate HTML for use in their ESPs.</p>",
+                    "textAlign": "center",
+                    "containerPadding": "10px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "containerPadding": "30px 40px"
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#ffffff",
+        "contentWidth": "600px",
+        "fontFamily": {
+          "label": "Arial",
+          "value": "arial,helvetica,sans-serif"
+        },
+        "textColor": "#000000"
+      }
+    },
+    "schemaVersion": 21
+  }
+}

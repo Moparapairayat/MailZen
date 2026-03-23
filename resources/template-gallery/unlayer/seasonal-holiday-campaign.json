@@ -1,0 +1,361 @@
+{
+  "name": "Holiday Season Campaign",
+  "description": "Festive template for Black Friday, Eid, Christmas, New Year and seasonal promotions",
+  "category": "marketing",
+  "subcategory": "seasonal_campaign",
+  "thumbnail": "https://images.unsplash.com/photo-1512389142860-9c449e58a814?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "seasonal_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_header",
+              "contents": [
+                {
+                  "id": "header_logo",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/140x45/065F46/FFFFFF?text=BRAND"
+                    },
+                    "width": "140px",
+                    "textAlign": "center",
+                    "containerPadding": "20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#065F46"
+          }
+        },
+        {
+          "id": "row_hero",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_hero",
+              "contents": [
+                {
+                  "id": "hero_decorations",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"font-size: 40px;\">🎄 ❄️ 🎁</p>",
+                    "textAlign": "center",
+                    "containerPadding": "40px 20px 15px 20px"
+                  }
+                },
+                {
+                  "id": "hero_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Holiday Season<br/>Special Sale",
+                    "headingType": "h1",
+                    "fontSize": "38px",
+                    "fontWeight": 800,
+                    "textAlign": "center",
+                    "lineHeight": "115%",
+                    "color": "#FFFFFF",
+                    "containerPadding": "0px 30px 15px 30px"
+                  }
+                },
+                {
+                  "id": "hero_subtitle",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: rgba(255,255,255,0.85); line-height: 160%;\">Celebrate the season with incredible savings! Enjoy up to 40% off on our curated holiday collection.</p>",
+                    "fontSize": "17px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 30px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#065F46"
+          }
+        },
+        {
+          "id": "row_offer_box",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_offer_box",
+              "contents": [
+                {
+                  "id": "offer_container",
+                  "type": "text",
+                  "values": {
+                    "text": "<div style=\"background: #ECFDF5; border-radius: 12px; padding: 30px; text-align: center;\"><p style=\"color: #065F46; font-size: 12px; font-weight: 600; letter-spacing: 2px; margin-bottom: 10px;\">LIMITED TIME OFFER</p><p style=\"color: #065F46; font-size: 48px; font-weight: 800; line-height: 1;\">40% OFF</p><p style=\"color: #047857; font-size: 14px; margin-top: 10px;\">Use code: <strong style=\"font-size: 18px; letter-spacing: 2px;\">HOLIDAY40</strong></p></div>",
+                    "containerPadding": "30px 40px 20px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_countdown",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_countdown",
+              "contents": [
+                {
+                  "id": "countdown_label",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; font-weight: 500;\">Sale Ends In</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "15px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "countdown_boxes",
+                  "type": "text",
+                  "values": {
+                    "text": "<div style=\"display: flex; justify-content: center; gap: 12px;\"><div style=\"background: #F3F4F6; border-radius: 8px; padding: 12px 18px; text-align: center;\"><p style=\"font-size: 24px; font-weight: 700; color: #111827;\">03</p><p style=\"font-size: 10px; color: #6B7280; text-transform: uppercase;\">Days</p></div><div style=\"background: #F3F4F6; border-radius: 8px; padding: 12px 18px; text-align: center;\"><p style=\"font-size: 24px; font-weight: 700; color: #111827;\">12</p><p style=\"font-size: 10px; color: #6B7280; text-transform: uppercase;\">Hours</p></div><div style=\"background: #F3F4F6; border-radius: 8px; padding: 12px 18px; text-align: center;\"><p style=\"font-size: 24px; font-weight: 700; color: #111827;\">45</p><p style=\"font-size: 10px; color: #6B7280; text-transform: uppercase;\">Mins</p></div></div>",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_cta",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_cta",
+              "contents": [
+                {
+                  "id": "cta_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Shop Holiday Deals",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#065F46"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "16px 40px",
+                    "textAlign": "center",
+                    "containerPadding": "10px 40px 35px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_categories",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_categories",
+              "contents": [
+                {
+                  "id": "cat_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Shop by Category",
+                    "headingType": "h2",
+                    "fontSize": "22px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "35px 20px 20px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB"
+          }
+        },
+        {
+          "id": "row_category_grid",
+          "cells": [1, 1, 1],
+          "columns": [
+            {
+              "id": "col_cat1",
+              "contents": [
+                {
+                  "id": "cat1_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/160x120/D1FAE5/065F46?text=Gifts"
+                    },
+                    "width": "100%",
+                    "containerPadding": "0px 8px"
+                  }
+                },
+                {
+                  "id": "cat1_name",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #111827; font-weight: 600;\">Gifts</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "8px 5px 20px 5px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_cat2",
+              "contents": [
+                {
+                  "id": "cat2_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/160x120/D1FAE5/065F46?text=Decor"
+                    },
+                    "width": "100%",
+                    "containerPadding": "0px 8px"
+                  }
+                },
+                {
+                  "id": "cat2_name",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #111827; font-weight: 600;\">Decor</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "8px 5px 20px 5px"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "col_cat3",
+              "contents": [
+                {
+                  "id": "cat3_img",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/160x120/D1FAE5/065F46?text=Fashion"
+                    },
+                    "width": "100%",
+                    "containerPadding": "0px 8px"
+                  }
+                },
+                {
+                  "id": "cat3_name",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #111827; font-weight: 600;\">Fashion</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "8px 5px 20px 5px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB",
+            "containerPadding": "0px 15px 25px 15px"
+          }
+        },
+        {
+          "id": "row_gift_message",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_gift",
+              "contents": [
+                {
+                  "id": "gift_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #FFFFFF;\">🎁 <strong>Free Gift Wrapping</strong> on all orders over $50</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "15px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#047857"
+          }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_footer",
+              "contents": [
+                {
+                  "id": "footer_greeting",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #D1D5DB; font-size: 20px;\">✨ Happy Holidays! ✨</p>",
+                    "textAlign": "center",
+                    "containerPadding": "25px 20px 15px 20px"
+                  }
+                },
+                {
+                  "id": "footer_info",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">© 2026 Your Brand. All rights reserved.<br/>123 Holiday Lane, City, Country</p><p style=\"margin-top: 12px;\"><a href=\"#\" style=\"color: #9CA3AF;\">Unsubscribe</a> • <a href=\"#\" style=\"color: #9CA3AF;\">Preferences</a></p>",
+                    "fontSize": "12px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#1F2937"
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#E5E7EB",
+        "contentWidth": "600px",
+        "fontFamily": {
+          "label": "Inter",
+          "value": "'Inter', sans-serif"
+        },
+        "textColor": "#111827"
+      }
+    },
+    "schemaVersion": 21
+  }
+}

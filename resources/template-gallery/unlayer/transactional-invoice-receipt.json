@@ -1,0 +1,35 @@
+{
+  "name": "Invoice & Receipt",
+  "description": "Professional invoice and payment receipt template",
+  "category": "transactional",
+  "subcategory": "invoice",
+  "thumbnail": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "invoice_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/1F2937/FFFFFF?text=COMPANY" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } },
+        { "id": "row_title", "cells": [1], "columns": [{ "id": "col_title", "contents": [
+          { "id": "receipt_icon", "type": "text", "values": { "text": "<p style=\"font-size: 40px;\">🧾</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "Payment Receipt", "headingType": "h1", "fontSize": "26px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 5px 20px" } },
+          { "id": "invoice_num", "type": "text", "values": { "text": "<p style=\"color: #6B7280;\">Invoice #INV-2026-00847</p>", "fontSize": "14px", "textAlign": "center", "containerPadding": "0px 20px 25px 20px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_details", "cells": [1, 1], "columns": [
+          { "id": "col_bill_to", "contents": [{ "id": "bill_to", "type": "text", "values": { "text": "<p style=\"color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;\">Bill To</p><p style=\"color: #111827; font-weight: 600;\">John Doe</p><p style=\"color: #6B7280; font-size: 14px;\">john@example.com</p>", "containerPadding": "20px 20px 20px 30px" } }] },
+          { "id": "col_payment", "contents": [{ "id": "payment_info", "type": "text", "values": { "text": "<p style=\"color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px;\">Payment Details</p><p style=\"color: #111827; font-size: 14px;\"><strong>Date:</strong> Jan 15, 2026</p><p style=\"color: #111827; font-size: 14px;\"><strong>Method:</strong> Visa •••• 4242</p>", "containerPadding": "20px 30px 20px 20px", "textAlign": "right" } }] }
+        ], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_items", "cells": [1], "columns": [{ "id": "col_items", "contents": [
+          { "id": "items_header", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 2px solid #E5E7EB;\"><p style=\"color: #6B7280; font-weight: 600; font-size: 12px; text-transform: uppercase;\">Description</p><p style=\"color: #6B7280; font-weight: 600; font-size: 12px; text-transform: uppercase;\">Amount</p></div>", "containerPadding": "20px 30px 0px 30px" } },
+          { "id": "item1", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #E5E7EB;\"><p style=\"color: #111827;\">Pro Plan - Monthly Subscription</p><p style=\"color: #111827; font-weight: 500;\">$29.00</p></div>", "containerPadding": "0px 30px" } },
+          { "id": "item2", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #E5E7EB;\"><p style=\"color: #111827;\">Additional Storage (50GB)</p><p style=\"color: #111827; font-weight: 500;\">$9.00</p></div>", "containerPadding": "0px 30px" } },
+          { "id": "total", "type": "text", "values": { "text": "<div style=\"display: flex; justify-content: space-between; padding: 20px 0;\"><p style=\"color: #111827; font-weight: 700; font-size: 16px;\">Total Paid</p><p style=\"color: #10B981; font-weight: 700; font-size: 20px;\">$38.00</p></div>", "containerPadding": "0px 30px 20px 30px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_status", "cells": [1], "columns": [{ "id": "col_status", "contents": [{ "id": "paid_badge", "type": "text", "values": { "text": "<p style=\"display: inline-block; background: #D1FAE5; color: #065F46; padding: 8px 20px; border-radius: 20px; font-weight: 600; font-size: 13px;\">✓ PAID</p>", "textAlign": "center", "containerPadding": "20px" } }] }], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">Questions? Contact billing@company.com</p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your Company</p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

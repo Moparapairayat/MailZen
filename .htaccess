@@ -1,0 +1,74 @@
+<IfModule mod_authz_core.c>
+     <FilesMatch "^\\.">
+         Require all denied
+     </FilesMatch>
+     <FilesMatch "^(?:artisan|server\\.php|composer\\.(?:json|lock)|package(?:-lock)?\\.json|yarn\\.lock|pnpm-lock\\.yaml|vite\\.config\\.js|phpunit\\.xml(?:\\.dist)?|Dockerfile|docker-compose\\.ya?ml)$">
+         Require all denied
+     </FilesMatch>
+ </IfModule>
+ <IfModule !mod_authz_core.c>
+     <FilesMatch "^\\.">
+         Order allow,deny
+         Deny from all
+     </FilesMatch>
+     <FilesMatch "^(?:artisan|server\\.php|composer\\.(?:json|lock)|package(?:-lock)?\\.json|yarn\\.lock|pnpm-lock\\.yaml|vite\\.config\\.js|phpunit\\.xml(?:\\.dist)?|Dockerfile|docker-compose\\.ya?ml)$">
+         Order allow,deny
+         Deny from all
+     </FilesMatch>
+ </IfModule>
+ 
+ <IfModule mod_rewrite.c>
+     <IfModule mod_negotiation.c>
+         Options -MultiViews -Indexes
+     </IfModule>
+ 
+     RewriteEngine On
+ 
+     RewriteRule ^\.well-known/ - [L]
+     RewriteRule ^\. - [F,NC]
+     RewriteRule ^(?:artisan|server\.php|composer\.(?:json|lock)|package(?:-lock)?\.json|yarn\.lock|pnpm-lock\.yaml|vite\.config\.js|phpunit\.xml(?:\.dist)?|Dockerfile|docker-compose\.ya?ml)$ - [F,NC]
+ 
+     # Handle Authorization Header
+     RewriteCond %{HTTP:Authorization} .
+     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # When the app is served from a subdirectory (for example /mailzen),
+    # Vite assets still resolve under /build/*. Map them explicitly to /public/build/*.
+    RewriteRule ^build/(.*)$ public/build/$1 [L,NC]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+    # Force storage URLs through Laravel so PublicStorageController can serve them
+    # on hosts that refuse to serve symlinked public/storage files directly.
+    RewriteCond %{DOCUMENT_ROOT}/public/index.php -f
+    RewriteRule ^storage/(.*)$ public/index.php [L,NC]
+    RewriteCond %{DOCUMENT_ROOT}/public/index.php -f
+    RewriteRule ^public/storage/(.*)$ public/index.php [L,NC]
+
+    # If this installation is served from the Laravel project root (not /public),
+    # serve existing assets from /public transparently.
+    RewriteCond %{DOCUMENT_ROOT}/public/index.php -f
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !^/public/ [NC]
+    RewriteCond %{REQUEST_URI} !^/storage/ [NC]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -d
+    RewriteRule ^ public%{REQUEST_URI} [L]
+
+    # Send Requests To Front Controller...
+    # If we're at project root, use /public/index.php
+    RewriteCond %{DOCUMENT_ROOT}/public/index.php -f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} !^/public/ [NC]
+    RewriteRule ^ public/index.php [L]
+
+    # Otherwise, fall back to the standard Laravel public/.htaccess behavior
+    RewriteCond %{DOCUMENT_ROOT}/public/index.php !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>

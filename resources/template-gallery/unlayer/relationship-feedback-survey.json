@@ -1,0 +1,32 @@
+{
+  "name": "Feedback & Survey Request",
+  "description": "Collect customer feedback and survey responses",
+  "category": "relationship",
+  "subcategory": "feedback",
+  "thumbnail": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "feedback_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/6366F1/FFFFFF?text=BRAND" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#6366F1" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">💭</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "We'd Love Your Feedback", "headingType": "h1", "fontSize": "28px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 170%; text-align: center;\">Your opinion matters! Help us improve by sharing your experience. It only takes 2 minutes.</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_rating", "cells": [1], "columns": [{ "id": "col_rating", "contents": [
+          { "id": "rating_title", "type": "text", "values": { "text": "<p style=\"color: #374151; font-weight: 600; text-align: center;\">How would you rate your experience?</p>", "fontSize": "15px", "containerPadding": "25px 20px 15px 20px" } },
+          { "id": "stars", "type": "text", "values": { "text": "<div style=\"text-align: center; font-size: 36px; letter-spacing: 10px;\"><a href=\"#\" style=\"text-decoration: none;\">⭐</a><a href=\"#\" style=\"text-decoration: none;\">⭐</a><a href=\"#\" style=\"text-decoration: none;\">⭐</a><a href=\"#\" style=\"text-decoration: none;\">⭐</a><a href=\"#\" style=\"text-decoration: none;\">⭐</a></div>", "containerPadding": "0px 20px 25px 20px" } }
+        ] }], "values": { "backgroundColor": "#F9FAFB" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "survey_btn", "type": "button", "values": { "text": "Take the Survey", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#6366F1" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "25px 40px 15px 40px" } },
+          { "id": "time", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF; font-size: 13px; text-align: center;\">⏱️ Takes only 2 minutes</p>", "containerPadding": "0px 20px 25px 20px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">Thank you for helping us improve!</p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your Brand | <a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

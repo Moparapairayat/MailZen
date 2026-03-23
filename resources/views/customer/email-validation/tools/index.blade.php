@@ -1,0 +1,81 @@
+@extends('layouts.customer')
+
+@section('title', 'Email Validation Tools')
+@section('page-title', 'Email Validation Tools')
+
+@section('content')
+<div class="space-y-6">
+    <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between lg:gap-0">
+        <div class="w-full lg:flex-1 lg:max-w-lg">
+            <form method="GET" action="{{ route('customer.email-validation.tools.index') }}" class="flex flex-col gap-2 lg:flex-row lg:items-center">
+                <input type="text" name="search" value="{{ $filters['search'] ?? '' }}" placeholder="Search tools..." class="block w-full rounded-md border-gray-300 dark:border-gray-600 shadow-sm focus:border-primary-500 focus:ring-primary-500 dark:bg-gray-700 dark:text-gray-100 sm:text-sm">
+                <x-button type="submit" variant="primary" class="w-full lg:w-auto">Search</x-button>
+            </form>
+        </div>
+        <div class="flex flex-col gap-2 w-full lg:w-auto lg:flex-row">
+            <x-button href="{{ route('customer.email-validation.runs.index') }}" variant="secondary" class="w-full lg:w-auto">Validation Runs</x-button>
+            @customercan('email_validation.permissions.can_create_tools')
+                <x-button href="{{ route('customer.email-validation.tools.create') }}" variant="primary" class="w-full lg:w-auto">Add Tool</x-button>
+            @endcustomercan
+        </div>
+    </div>
+
+    <x-card :padding="false">
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+                <thead class="bg-gray-50 dark:bg-gray-800">
+                    <tr>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Name</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Provider</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Owner</th>
+                        <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Active</th>
+                        <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 dark:text-gray-400 uppercase">Actions</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                    @forelse($tools as $tool)
+                        <tr class="hover:bg-gray-50 dark:hover:bg-gray-700">
+                            <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 dark:text-gray-100">{{ $tool->name }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">{{ strtoupper($tool->provider) }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">{{ $tool->customer_id ? 'Mine' : 'System' }}</td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full {{ $tool->active ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-800' }}">
+                                    {{ $tool->active ? 'Yes' : 'No' }}
+                                </span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                <div class="flex items-center justify-end gap-2">
+                                    <x-button href="{{ route('customer.email-validation.tools.show', $tool) }}" variant="table" size="action" :pill="true" class="p-2" title="View" aria-label="View"><x-lucide name="eye" class="h-4 w-4" /><span class="sr-only">View</span></x-button>
+                                    @if($tool->customer_id)
+                                        @customercan('email_validation.permissions.can_edit_tools')
+                                            <x-button href="{{ route('customer.email-validation.tools.edit', $tool) }}" variant="table" size="action" :pill="true" class="p-2" title="Edit" aria-label="Edit"><x-lucide name="pencil" class="h-4 w-4" /><span class="sr-only">Edit</span></x-button>
+                                        @endcustomercan
+
+                                        @customercan('email_validation.permissions.can_delete_tools')
+                                            <form method="POST" action="{{ route('customer.email-validation.tools.destroy', $tool) }}" class="inline" onsubmit="return confirm('Are you sure?');">
+                                                @csrf
+                                                @method('DELETE')
+                                                <x-button type="submit" variant="table-danger" size="action" :pill="true" class="p-2" title="Delete" aria-label="Delete"><x-lucide name="trash-2" class="h-4 w-4" /><span class="sr-only">Delete</span></x-button>
+                                            </form>
+                                        @endcustomercan
+                                    @endif
+                                </div>
+                            </td>
+                        </tr>
+                    @empty
+                        <tr>
+                            <td colspan="5" class="px-6 py-4 text-center text-sm text-gray-500 dark:text-gray-400">No tools found.</td>
+                        </tr>
+                    @endforelse
+                </tbody>
+            </table>
+        </div>
+
+        @if($tools->hasPages())
+            <div class="px-6 py-3">
+                {{ $tools->links() }}
+            </div>
+        @endif
+    </x-card>
+</div>
+@endsection

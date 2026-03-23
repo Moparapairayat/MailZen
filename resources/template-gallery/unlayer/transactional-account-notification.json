@@ -1,0 +1,31 @@
+{
+  "name": "Account Notification",
+  "description": "Account activity and security notification template",
+  "category": "transactional",
+  "subcategory": "account",
+  "thumbnail": "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "account_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/6366F1/FFFFFF?text=APP" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#6366F1" } },
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 44px;\">🔔</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "Account Activity Alert", "headingType": "h1", "fontSize": "26px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "message", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 170%;\">Hi there,</p><p style=\"color: #374151; line-height: 170%; margin-top: 10px;\">We detected a new sign-in to your account. If this was you, no action is needed.</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_details", "cells": [1], "columns": [{ "id": "col_details", "contents": [
+          { "id": "details_box", "type": "text", "values": { "text": "<div style=\"background: #F3F4F6; border-radius: 8px; padding: 20px;\"><p style=\"color: #6B7280; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px;\">Sign-in Details</p><p style=\"color: #374151; margin-bottom: 8px;\"><strong>Device:</strong> Chrome on Windows</p><p style=\"color: #374151; margin-bottom: 8px;\"><strong>Location:</strong> New York, United States</p><p style=\"color: #374151; margin-bottom: 8px;\"><strong>IP Address:</strong> 192.168.1.xxx</p><p style=\"color: #374151;\"><strong>Time:</strong> Jan 16, 2026 at 3:45 PM EST</p></div>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_action", "cells": [1], "columns": [{ "id": "col_action", "contents": [
+          { "id": "warning", "type": "text", "values": { "text": "<p style=\"color: #DC2626; font-weight: 500;\">⚠️ Wasn't you?</p><p style=\"color: #6B7280; margin-top: 5px;\">If you didn't sign in, secure your account immediately.</p>", "fontSize": "14px", "textAlign": "center", "containerPadding": "20px 40px 15px 40px" } },
+          { "id": "secure_btn", "type": "button", "values": { "text": "Secure My Account", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#DC2626" }, "borderRadius": "8px", "padding": "14px 32px", "textAlign": "center", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FEF2F2" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">This is an automated security alert.</p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your App</p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

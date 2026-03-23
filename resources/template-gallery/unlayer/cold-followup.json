@@ -1,0 +1,25 @@
+{
+  "name": "Follow-up Email",
+  "description": "Professional follow-up email for sales outreach",
+  "category": "cold",
+  "subcategory": "followup",
+  "thumbnail": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "followup_body",
+      "rows": [
+        { "id": "row_content", "cells": [1], "columns": [{ "id": "col_content", "contents": [
+          { "id": "greeting", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">Hi {{first_name}},</p>", "fontSize": "15px", "containerPadding": "40px 40px 15px 40px" } },
+          { "id": "context", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">I wanted to follow up on my previous email. I understand you're busy, so I'll keep this brief.</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "value", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">I genuinely believe we could help {{company_name}} achieve [specific result]. Would a quick 15-minute call be worthwhile to explore this?</p>", "fontSize": "15px", "containerPadding": "0px 40px 15px 40px" } },
+          { "id": "cta", "type": "text", "values": { "text": "<p style=\"color: #374151; line-height: 180%;\">If you're interested, here's my calendar link: <a href=\"#\" style=\"color: #4F46E5;\">Schedule a call</a></p><p style=\"color: #374151; line-height: 180%; margin-top: 10px;\">If not, no worries at all – I won't follow up again.</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } },
+          { "id": "signature", "type": "text", "values": { "text": "<p style=\"color: #374151;\">Best,</p><p style=\"color: #111827; font-weight: 600; margin-top: 8px;\">John Smith</p><p style=\"color: #6B7280; font-size: 14px;\">Account Executive | Your Company</p>", "containerPadding": "0px 40px 40px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">© 2026 Your Company | <a href=\"#\" style=\"color: #9CA3AF;\">Unsubscribe</a></p>", "fontSize": "11px", "textAlign": "center", "containerPadding": "20px" } }] }], "values": { "backgroundColor": "#F9FAFB" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}

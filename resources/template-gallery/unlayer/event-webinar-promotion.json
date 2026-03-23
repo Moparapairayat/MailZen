@@ -1,0 +1,395 @@
+{
+  "name": "Webinar & Event Promotion",
+  "description": "Professional template for webinars, workshops, live events and conferences",
+  "category": "marketing",
+  "subcategory": "event_promotion",
+  "thumbnail": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "event_body",
+      "rows": [
+        {
+          "id": "row_header",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_header",
+              "contents": [
+                {
+                  "id": "header_logo",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/140x45/7C3AED/FFFFFF?text=EVENTS"
+                    },
+                    "width": "140px",
+                    "textAlign": "center",
+                    "containerPadding": "20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#7C3AED"
+          }
+        },
+        {
+          "id": "row_badge",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_badge",
+              "contents": [
+                {
+                  "id": "event_badge",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"display: inline-block; background: rgba(255,255,255,0.2); color: white; padding: 8px 20px; border-radius: 25px; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;\">📅 Live Webinar</p>",
+                    "textAlign": "center",
+                    "containerPadding": "35px 20px 15px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#7C3AED"
+          }
+        },
+        {
+          "id": "row_hero",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_hero",
+              "contents": [
+                {
+                  "id": "hero_title",
+                  "type": "heading",
+                  "values": {
+                    "text": "Master the Art of<br/>Digital Marketing",
+                    "headingType": "h1",
+                    "fontSize": "34px",
+                    "fontWeight": 800,
+                    "textAlign": "center",
+                    "lineHeight": "120%",
+                    "color": "#FFFFFF",
+                    "containerPadding": "0px 30px 15px 30px"
+                  }
+                },
+                {
+                  "id": "hero_subtitle",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: rgba(255,255,255,0.85); line-height: 160%;\">Join our expert-led webinar and learn proven strategies to grow your business online. Limited spots available!</p>",
+                    "fontSize": "16px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 35px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#7C3AED"
+          }
+        },
+        {
+          "id": "row_event_details",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_event_details",
+              "contents": [
+                {
+                  "id": "details_box",
+                  "type": "text",
+                  "values": {
+                    "text": "<div style=\"background: #F5F3FF; border-radius: 12px; padding: 25px; margin: 0 20px;\"><div style=\"display: flex; flex-direction: column; gap: 15px;\"><div style=\"display: flex; align-items: center; gap: 12px;\"><span style=\"font-size: 20px;\">📆</span><div><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 2px;\">DATE</p><p style=\"color: #111827; font-weight: 600;\">Thursday, January 25, 2026</p></div></div><div style=\"display: flex; align-items: center; gap: 12px;\"><span style=\"font-size: 20px;\">🕐</span><div><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 2px;\">TIME</p><p style=\"color: #111827; font-weight: 600;\">2:00 PM - 3:30 PM (EST)</p></div></div><div style=\"display: flex; align-items: center; gap: 12px;\"><span style=\"font-size: 20px;\">💻</span><div><p style=\"color: #6B7280; font-size: 12px; margin-bottom: 2px;\">LOCATION</p><p style=\"color: #111827; font-weight: 600;\">Online via Zoom</p></div></div></div></div>",
+                    "containerPadding": "30px 20px 25px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_cta",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_cta",
+              "contents": [
+                {
+                  "id": "cta_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Reserve My Free Spot",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#7C3AED"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "16px 40px",
+                    "textAlign": "center",
+                    "containerPadding": "10px 40px 15px 40px"
+                  }
+                },
+                {
+                  "id": "spots_left",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #DC2626; font-weight: 500;\">⚡ Only 47 spots remaining</p>",
+                    "fontSize": "13px",
+                    "textAlign": "center",
+                    "containerPadding": "5px 20px 30px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_agenda",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_agenda",
+              "contents": [
+                {
+                  "id": "agenda_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "What You'll Learn",
+                    "headingType": "h2",
+                    "fontSize": "22px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "35px 20px 20px 20px"
+                  }
+                },
+                {
+                  "id": "agenda_items",
+                  "type": "text",
+                  "values": {
+                    "text": "<div style=\"text-align: left; max-width: 400px; margin: 0 auto;\"><div style=\"display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px;\"><span style=\"color: #7C3AED; font-size: 18px;\">✓</span><p style=\"color: #374151; line-height: 150%;\"><strong>Social Media Strategy</strong> - Build an engaged audience across platforms</p></div><div style=\"display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px;\"><span style=\"color: #7C3AED; font-size: 18px;\">✓</span><p style=\"color: #374151; line-height: 150%;\"><strong>Content Marketing</strong> - Create content that converts visitors to customers</p></div><div style=\"display: flex; align-items: flex-start; gap: 12px; margin-bottom: 15px;\"><span style=\"color: #7C3AED; font-size: 18px;\">✓</span><p style=\"color: #374151; line-height: 150%;\"><strong>Email Automation</strong> - Set up sequences that sell on autopilot</p></div><div style=\"display: flex; align-items: flex-start; gap: 12px;\"><span style=\"color: #7C3AED; font-size: 18px;\">✓</span><p style=\"color: #374151; line-height: 150%;\"><strong>Analytics & ROI</strong> - Measure what matters and optimize results</p></div></div>",
+                    "fontSize": "14px",
+                    "containerPadding": "0px 30px 30px 30px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB"
+          }
+        },
+        {
+          "id": "row_speaker",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_speaker",
+              "contents": [
+                {
+                  "id": "speaker_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Meet Your Host",
+                    "headingType": "h2",
+                    "fontSize": "22px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "35px 20px 20px 20px"
+                  }
+                },
+                {
+                  "id": "speaker_image",
+                  "type": "image",
+                  "values": {
+                    "src": {
+                      "url": "https://via.placeholder.com/100x100/E9D5FF/7C3AED?text=JD"
+                    },
+                    "width": "100px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 15px 20px"
+                  }
+                },
+                {
+                  "id": "speaker_name",
+                  "type": "heading",
+                  "values": {
+                    "text": "Jane Doe",
+                    "headingType": "h3",
+                    "fontSize": "18px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "0px 20px 5px 20px"
+                  }
+                },
+                {
+                  "id": "speaker_title",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #7C3AED; font-weight: 500;\">Digital Marketing Expert & Founder</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "speaker_bio",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280; line-height: 160%;\">With 10+ years of experience helping businesses grow online, Jane has trained over 5,000 marketers and generated $50M+ in revenue for her clients.</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 50px 35px 50px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "id": "row_bonus",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_bonus",
+              "contents": [
+                {
+                  "id": "bonus_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #FFFFFF;\">🎁 <strong>FREE BONUS:</strong> All attendees receive our Digital Marketing Toolkit ($97 value)</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "18px 25px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#5B21B6"
+          }
+        },
+        {
+          "id": "row_final_cta",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_final_cta",
+              "contents": [
+                {
+                  "id": "final_heading",
+                  "type": "heading",
+                  "values": {
+                    "text": "Don't Miss Out!",
+                    "headingType": "h2",
+                    "fontSize": "24px",
+                    "fontWeight": 700,
+                    "textAlign": "center",
+                    "color": "#111827",
+                    "containerPadding": "35px 20px 10px 20px"
+                  }
+                },
+                {
+                  "id": "final_text",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #6B7280;\">Secure your spot now. Replay will be available for registered attendees only.</p>",
+                    "fontSize": "14px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 20px 40px"
+                  }
+                },
+                {
+                  "id": "final_btn",
+                  "type": "button",
+                  "values": {
+                    "text": "Register Now - It's Free!",
+                    "href": {
+                      "name": "web",
+                      "values": {
+                        "href": "#",
+                        "target": "_blank"
+                      }
+                    },
+                    "buttonColors": {
+                      "color": "#FFFFFF",
+                      "backgroundColor": "#7C3AED"
+                    },
+                    "borderRadius": "8px",
+                    "padding": "16px 40px",
+                    "textAlign": "center",
+                    "containerPadding": "0px 40px 40px 40px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#F9FAFB"
+          }
+        },
+        {
+          "id": "row_footer",
+          "cells": [1],
+          "columns": [
+            {
+              "id": "col_footer",
+              "contents": [
+                {
+                  "id": "footer_info",
+                  "type": "text",
+                  "values": {
+                    "text": "<p style=\"color: #9CA3AF;\">Questions? Reply to this email or contact support@company.com</p><p style=\"color: #6B7280; margin-top: 15px;\">© 2026 Your Company. All rights reserved.<br/>123 Business Ave, City, Country</p><p style=\"margin-top: 15px;\"><a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a> • <a href=\"#\" style=\"color: #6B7280;\">Privacy Policy</a></p>",
+                    "fontSize": "12px",
+                    "textAlign": "center",
+                    "containerPadding": "30px 20px"
+                  }
+                }
+              ]
+            }
+          ],
+          "values": {
+            "backgroundColor": "#1F2937"
+          }
+        }
+      ],
+      "values": {
+        "backgroundColor": "#E5E7EB",
+        "contentWidth": "600px",
+        "fontFamily": {
+          "label": "Inter",
+          "value": "'Inter', sans-serif"
+        },
+        "textColor": "#111827"
+      }
+    },
+    "schemaVersion": 21
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Back-in-Stock Alert",
+  "description": "Notify customers when a product they wanted is available again",
+  "category": "ecommerce",
+  "subcategory": "back_in_stock",
+  "thumbnail": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&h=300&fit=crop&auto=format",
+  "design": {
+    "counters": {},
+    "body": {
+      "id": "stock_body",
+      "rows": [
+        { "id": "row_header", "cells": [1], "columns": [{ "id": "col_header", "contents": [{ "id": "logo", "type": "image", "values": { "src": { "url": "https://via.placeholder.com/140x45/059669/FFFFFF?text=STORE" }, "width": "140px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#059669" } },
+        { "id": "row_hero", "cells": [1], "columns": [{ "id": "col_hero", "contents": [
+          { "id": "icon", "type": "text", "values": { "text": "<p style=\"font-size: 48px;\">🎉</p>", "textAlign": "center", "containerPadding": "30px 20px 10px 20px" } },
+          { "id": "title", "type": "heading", "values": { "text": "It's Back in Stock!", "headingType": "h1", "fontSize": "30px", "fontWeight": 700, "textAlign": "center", "color": "#111827", "containerPadding": "0px 20px 15px 20px" } },
+          { "id": "intro", "type": "text", "values": { "text": "<p style=\"color: #6B7280; line-height: 170%; text-align: center;\">Great news! The item you've been waiting for is now available. Grab it before it sells out again!</p>", "fontSize": "15px", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_product", "cells": [1], "columns": [{ "id": "col_product", "contents": [
+          { "id": "product_box", "type": "text", "values": { "text": "<div style=\"background: #F9FAFB; border-radius: 12px; padding: 25px; text-align: center;\"><div style=\"width: 200px; height: 200px; background: #E5E7EB; border-radius: 8px; margin: 0 auto 20px;\"></div><p style=\"color: #111827; font-size: 18px; font-weight: 600;\">Premium Wireless Headphones</p><p style=\"color: #6B7280; font-size: 14px; margin: 8px 0;\">Noise-canceling • 30hr battery</p><p style=\"color: #059669; font-size: 24px; font-weight: 700;\">$149.99</p><p style=\"color: #DC2626; font-size: 13px; margin-top: 10px;\">⚡ Only 12 left in stock</p></div>", "containerPadding": "0px 40px 25px 40px" } }
+        ] }], "values": { "backgroundColor": "#FFFFFF" } },
+        { "id": "row_cta", "cells": [1], "columns": [{ "id": "col_cta", "contents": [
+          { "id": "buy_btn", "type": "button", "values": { "text": "Buy Now Before It's Gone", "href": { "name": "web", "values": { "href": "#", "target": "_blank" } }, "buttonColors": { "color": "#FFFFFF", "backgroundColor": "#059669" }, "borderRadius": "8px", "padding": "16px 40px", "textAlign": "center", "containerPadding": "20px 40px 30px 40px" } }
+        ] }], "values": { "backgroundColor": "#ECFDF5" } },
+        { "id": "row_footer", "cells": [1], "columns": [{ "id": "col_footer", "contents": [{ "id": "footer", "type": "text", "values": { "text": "<p style=\"color: #9CA3AF;\">You received this because you signed up for back-in-stock alerts.</p><p style=\"color: #6B7280; margin-top: 10px;\">© 2026 Your Store | <a href=\"#\" style=\"color: #6B7280;\">Unsubscribe</a></p>", "fontSize": "12px", "textAlign": "center", "containerPadding": "25px 20px" } }] }], "values": { "backgroundColor": "#1F2937" } }
+      ],
+      "values": { "backgroundColor": "#E5E7EB", "contentWidth": "600px", "fontFamily": { "label": "Inter", "value": "'Inter', sans-serif" } }
+    },
+    "schemaVersion": 21
+  }
+}
